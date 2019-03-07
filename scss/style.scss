@@ -15,3 +15,17 @@
 #wrapper{
     width: 100%;
 }
+
+.columns{
+    height: 65vh;
+    background-color:#F7F7F7;
+    width: 100%;
+    display: flex;
+    .column{
+        height: 65vh;
+        background-color:red;
+        width: 50%;
+
+    }
+
+}
