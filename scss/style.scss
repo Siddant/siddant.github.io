@@ -9,18 +9,21 @@ $primary-color: #522E75;
 }
 
 .navbar{
-    height: 5vh;
+    height: 7vh;
     .navbar-menu{
         height:auto;
         background-color: blue;
-
         .navbar-item{
             text-decoration: none;
             color: red;
-            background-color: green;
+            background-color: white;
             text-align: center;
-            padding: 14px 16px;
+            padding: 2.4vh;
             display:inline-block;
+            margin-left: 1vh;
+            &:hover{
+                background-color: blue;
+            }
 
         }
     }
@@ -36,7 +39,7 @@ $primary-color: #522E75;
 }
 
 .columns{
-    height: auto;
+    height: 65vh;
     background-color:#F7F7F7;
     width: 100%;
     display: flex;
