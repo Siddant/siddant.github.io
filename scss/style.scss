@@ -1,5 +1,17 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 7.4vh;
+}
+
 .hero{
     height: 92vh;
     width: 100%;
-    background-color: blanchedalmond;
+    background-color:#522E75;
   }
+#wrapper{
+    width: 100%;
+}
