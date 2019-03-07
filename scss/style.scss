@@ -17,15 +17,26 @@
 }
 
 .columns{
-    height: 65vh;
+    height: auto;
     background-color:#F7F7F7;
     width: 100%;
     display: flex;
     .column{
         height: 65vh;
         background-color:red;
-        width: 50%;
-
+        flex-grow:1;
+        &:nth-child(1){
+            background-color:blue;
+        }
+        &:nth-child(2){
+            background-color:green;
+        }
+        &:nth-child(3){
+            background-color:grey;
+        }
+        &.hero{
+            height: 92vh;
+            background-color:#522E75;
+        }
     }
-
 }
