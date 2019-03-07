@@ -6,6 +6,7 @@ $primary-color: #522E75;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .navbar{
@@ -33,6 +34,12 @@ $primary-color: #522E75;
     height: $full-screen;
     width: 100%;
     background-color:$primary-color;
+    .hero-body{
+        height: $full-screen;
+        background-image: url('https://www.jlevines.com/wp-content/uploads/2018/05/portfolioBG.jpg');
+        background-size: cover;
+
+    }
   }
 #wrapper{
     width: 100%;
