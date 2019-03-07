@@ -1,16 +1,20 @@
+$hero-height: 92vh;
+$primary-color: #522E75;
+
+
 *{
     margin: 0;
     box-sizing: border-box;
 }
 
 .navbar{
-    height: 7.4vh;
+    height: 7vh;
 }
 
 .hero{
-    height: 92vh;
+    height: $hero-height;
     width: 100%;
-    background-color:#522E75;
+    background-color:$primary-color;
   }
 #wrapper{
     width: 100%;
@@ -35,8 +39,8 @@
             background-color:grey;
         }
         &.hero{
-            height: 92vh;
-            background-color:#522E75;
+            height: $hero-height;
+            background-color:$primary-color;
         }
     }
 }
