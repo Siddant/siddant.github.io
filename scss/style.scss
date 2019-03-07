@@ -1,20 +1,28 @@
-$full-screen: 92vh;
+$full-screen: 100vh;
 $primary-color: #522E75;
 
 
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 .navbar{
-    height: 7vh;
+    height: 5vh;
     .navbar-menu{
-        a{
+        height:auto;
+        background-color: blue;
+
+        .navbar-item{
             text-decoration: none;
             color: red;
+            background-color: green;
+            text-align: center;
+            padding: 14px 16px;
+            display:inline-block;
+
         }
-        
     }
 }
 
