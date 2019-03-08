@@ -34,13 +34,15 @@ $primary-color: #522E75;
     height: $full-screen;
     width: 100%;
     background-color:$primary-color;
-    .hero-body{
-        height: $full-screen;
-        background-image: url('https://www.jlevines.com/wp-content/uploads/2018/05/portfolioBG.jpg');
-        background-size: cover;
-
-    }
   }
+  .parallax{
+    height: $full-screen;
+    background-size: cover;
+    background-image: url('https://www.jlevines.com/wp-content/uploads/2018/05/portfolioBG.jpg');
+}
+
+
+
 #wrapper{
     width: 100%;
 }
@@ -54,6 +56,7 @@ $primary-color: #522E75;
         height: 65vh;
         background-color:red;
         flex-grow:1;
+        padding: 6vh;
         &:nth-child(1){
             background-color:blue;
         }
@@ -66,6 +69,10 @@ $primary-color: #522E75;
         &.hero{
             height: $full-screen;
             background-color:$primary-color;
+        }
+        img{
+            height: 50vh;
+            width: 75vh;
         }
     }
 }
