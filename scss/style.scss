@@ -7,6 +7,8 @@ $primary-color: #522E75;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
+    "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .navbar{
@@ -34,6 +36,10 @@ $primary-color: #522E75;
     height: $full-screen;
     width: 100%;
     background-color:$primary-color;
+    .hero-body{
+        padding: 40vh;
+        color: #F7F7F7;
+    }
   }
   .parallax{
     height: $full-screen;
@@ -75,6 +81,12 @@ $primary-color: #522E75;
             width: 75vh;
         }
     }
+}
+
+
+
+.skills{
+    text-align: center;
 }
 
 footer{
