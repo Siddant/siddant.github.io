@@ -91,7 +91,8 @@ $white: #F7F7F7;
 .skills{
     text-align: center;
     padding: 6vh;
-
+    display: flex;
+    flex-wrap: wrap;
     .skills-icon{
         font-size: 10vh;
         color: $white;
