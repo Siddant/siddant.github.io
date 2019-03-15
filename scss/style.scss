@@ -39,6 +39,7 @@ $primary-color: #522E75;
     .hero-body{
         padding: 40vh;
         color: #F7F7F7;
+        text-align: center;
     }
   }
   .parallax{
@@ -62,14 +63,14 @@ $primary-color: #522E75;
         background-color:red;
         flex-grow:1;
         padding: 6vh;
+        &.half{
+            width: 50%;
+        }
         &:nth-child(1){
             background-color:blue;
         }
         &:nth-child(2){
             background-color:green;
-        }
-        &:nth-child(3){
-            background-color:grey;
         }
         &.hero{
             height: $full-screen;
