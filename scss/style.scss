@@ -64,6 +64,7 @@ $white: #F7F7F7;
         padding: 6vh;
         &.half{
             width: 50%;
+            padding: 15vh;
         }
 
         &.project{
@@ -88,14 +89,12 @@ $white: #F7F7F7;
         font-size: 10vh;
         color: black;
         padding: 2vh 5vh;
-
     }
 }
 .arrow-down{
     font-size: 10vh;
     position: absolute;
-    bottom: 25px;
-    color: red;
+    bottom: 5vh;
 }
 
 footer{
