@@ -1,5 +1,5 @@
 $full-screen: 100vh;
-$primary-color: #522E75;
+$primary-color: black;
 $white: #F7F7F7;
 
 
@@ -16,11 +16,10 @@ $white: #F7F7F7;
     height: 7vh;
     .navbar-menu{
         height:auto;
-        background-color: blue;
+        background-color: black;
         .navbar-item{
             text-decoration: none;
-            color: red;
-            background-color: white;
+            color: white;
             text-align: center;
             padding: 2.4vh;
             display:inline-block;
@@ -59,44 +58,36 @@ $white: #F7F7F7;
     width: 100%;
     display: flex;
     .column{
+        flex-grow: 1;
         height: $full-screen;
-        background-color:red;
-        flex-grow:1;
         padding: 6vh;
         &.half{
             width: 50%;
         }
-        &:nth-child(1){
-            background-color:blue;
+
+        &.project{
+            flex-wrap: wrap;
+            background-color:red;
         }
-        &:nth-child(2){
-            background-color:green;
-        }
-        &.hero{
-            height: $full-screen;
-            background-color:$primary-color;
-        }
-        
-        img{
+        .image{
             height: 50vh;
             width: auto;
-            justify-content: center;
         }
     }
+
 }
 
 
 
 .skills{
-    background: #522E75;
-    padding: 6vh;
+    padding: 15vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     .skills-icon{
         font-size: 10vh;
-        color: $white;
-        padding: 2vh 8vh;
+        color: black;
+        padding: 2vh 5vh;
 
     }
 }
