@@ -1,5 +1,6 @@
 $full-screen: 100vh;
 $primary-color: #522E75;
+$white: #F7F7F7;
 
 
 *{
@@ -76,10 +77,9 @@ $primary-color: #522E75;
             height: $full-screen;
             background-color:$primary-color;
         }
-
         
         img{
-            height: 55vh;
+            height: 50vh;
             width: auto;
             justify-content: center;
         }
@@ -90,9 +90,15 @@ $primary-color: #522E75;
 
 .skills{
     text-align: center;
+    padding: 6vh;
+
+    .skills-icon{
+        font-size: 10vh;
+        color: $white;
+    }
 }
 
 footer{
     height: 65vh;
-    background-color:#F7F7F7;
+    background-color:$white;
 }
