@@ -70,7 +70,7 @@ $white: #F7F7F7;
             width: 50%;
         }
         .image{
-            height: 50vh;
+            height: 60vh;
             width: auto;
         }
     }
@@ -79,7 +79,8 @@ $white: #F7F7F7;
 
 
 .skills{
-    padding: 15vh;
+    
+    padding: 15vh 5vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -90,6 +91,7 @@ $white: #F7F7F7;
     }
 }
 .arrow-down{
+    text-align: center;
     font-size: 10vh;
     position: absolute;
     bottom: 5vh;
