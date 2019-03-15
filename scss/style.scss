@@ -76,9 +76,12 @@ $primary-color: #522E75;
             height: $full-screen;
             background-color:$primary-color;
         }
+
+        
         img{
-            height: 50vh;
-            width: 75vh;
+            height: 55vh;
+            width: auto;
+            justify-content: center;
         }
     }
 }
