@@ -58,7 +58,12 @@ $white: #F7F7F7;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    &.multi-column{
+        background-color:red;
+        flex-wrap: wrap;
+    }
     .column{
+        width: 100%;
         flex-grow: 1;
         height: $full-screen;
         padding: 6vh;
@@ -66,16 +71,11 @@ $white: #F7F7F7;
             width: 50%;
             padding: 15vh;
         }
-
-        &.project{
-            background-color:red;
-        }
         .image{
             height: 50vh;
             width: auto;
         }
     }
-
 }
 
 
