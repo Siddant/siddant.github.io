@@ -55,12 +55,11 @@ $white: #F7F7F7;
 }
 
 .columns{
-    height: 65vh;
     background-color:#F7F7F7;
     width: 100%;
     display: flex;
     .column{
-        height: 65vh;
+        height: $full-screen;
         background-color:red;
         flex-grow:1;
         padding: 6vh;
@@ -89,13 +88,16 @@ $white: #F7F7F7;
 
 
 .skills{
-    text-align: center;
+    background: #522E75;
     padding: 6vh;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     .skills-icon{
         font-size: 10vh;
         color: $white;
+        padding: 2vh 8vh;
+
     }
 }
 
