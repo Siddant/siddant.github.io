@@ -10,6 +10,11 @@ $white: #F7F7F7;
     scroll-behavior: smooth;
     font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
     "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .navbar{
@@ -79,8 +84,6 @@ $white: #F7F7F7;
         }
     }
 }
-
-
 
 .skills{
     
