@@ -19,7 +19,6 @@ body{
 
 .navbar{
     height: 7vh;
-    background-color: red;
     width: 100%;
     .navbar-menu{
         height:auto;
@@ -118,6 +117,30 @@ body{
 }
 
 footer{
-    height:$full-screen;
+    height: 65vh;
     background-color:$white;
+    text-align: center;
+    .arrow-up{
+        text-align: center;
+        font-size: 10vh;
+        position: absolute;
+        top: 705vh;
+
+    }
+    .navbar{
+        padding-top: 9vh;
+
+    }
+    .footer-icon{
+        color: white;
+        font-size: 8vh;
+    }
 }
+
+.fas{
+    &:hover{
+        font-size: 12vh;
+
+    }
+}
+
