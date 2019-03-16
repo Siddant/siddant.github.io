@@ -1,6 +1,8 @@
 $full-screen: 100vh;
 $primary-color: black;
 $white: #F7F7F7;
+$mobile: 768px;
+$tablet: 960px;
 
 
 *{
@@ -124,10 +126,11 @@ body{
 
 footer{
     text-align: center;
+    color: white;
+
     .arrow-up{
         text-align: center;
         font-size: 10vh;
-        color: white;
     }
     .navbar{
         .navbar-start{
@@ -136,7 +139,6 @@ footer{
         }
     }
     .footer-icon{
-        color: white;
         font-size: 8vh;
     }
     .columns{
