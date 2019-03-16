@@ -10,7 +10,6 @@ $white: #F7F7F7;
     scroll-behavior: smooth;
     font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
     "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-
 }
 body{
     display: flex;
@@ -81,7 +80,7 @@ body{
 
 .columns{
     background-color:#F7F7F7;
-    width: 100%;
+    flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
     &.multi-column{
@@ -89,7 +88,6 @@ body{
     }
     .column{
         width: 100%;
-        flex-grow: 1;
         height: $full-screen;
         &.half{
             width: 50%;
@@ -132,8 +130,10 @@ footer{
         color: white;
     }
     .navbar{
-        padding-top: 9vh;
-
+        .navbar-start{
+            color: red;
+            justify-content: center;
+        }
     }
     .footer-icon{
         color: white;
