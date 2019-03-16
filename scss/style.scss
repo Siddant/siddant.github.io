@@ -36,9 +36,6 @@ body{
                 text-align:center;
 
                 &:nth-child(6){
-                    justify-content:flex-end;
-                    width: 30vh;
-                    flex-grow:flex-end ;
                     display: none;
 
                 }
@@ -76,7 +73,7 @@ body{
     width: 100%;
     height: auto;
 }
-
+    
     .columns{
         background-color:#F7F7F7;
         flex-grow: 1;
@@ -163,13 +160,58 @@ body{
 
 
 @media only screen and (max-width: $mobile) {
+
+    .navbar{
+        height: auto;
+        width: 100%;
+        .navbar-menu{
+            height:auto;
+            background-color: black;
+            .navbar-start{
+  
+                display: flex;
+                flex-wrap: wrap;
+                .navbar-item{
+                    // display: none;
+                    justify-content: center;
+                    width: 100%;
+
+                    &:nth-child(1){
+                        display: flex;
+
+                    }
+                    .burger{
+                        color: red;
+                        font-size: 4vh;
+                    }
+        
+                }
+            }
+        }
+    }
+
+
+
+
+
+
     .columns { 
         display: flex;
         flex-wrap: wrap;
-        &.half{
-            width: 100%;
-            background-color: blue;
+        .skills{
+            padding: 0 !important;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            background-color: green;
+            .skills-icon{
+                font-size: 10vh;
+                color: black;
+                padding: 0 !important;
+
+            }
         }
+
     }  
 }
 
