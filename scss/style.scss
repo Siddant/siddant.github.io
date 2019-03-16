@@ -2,7 +2,14 @@ $full-screen: 100vh;
 $primary-color: black;
 $white: #F7F7F7;
 $mobile: 768px;
-$tablet: 960px;
+$tablet: 1024px;
+
+
+
+
+// mobile: 320px - 768px
+// tablet: 769px - 1024px
+
 
 
 *{
@@ -84,7 +91,6 @@ body{
     background-color:#F7F7F7;
     flex-grow: 1;
     display: flex;
-    flex-wrap: wrap;
     &.multi-column{
         flex-wrap: wrap;
     }
@@ -152,6 +158,18 @@ footer{
     }
 
 }
+
+
+@media only screen and (max-width: $tablet) {
+    .column { background-color: red; }
+  }
+
+
+
+
+@media only screen and (max-width: $mobile) {
+    .column { background-color: green; }
+  }
 
 
 
