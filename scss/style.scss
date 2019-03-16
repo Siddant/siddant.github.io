@@ -126,14 +126,12 @@ body{
 
 footer{
     height: 65vh;
-    background-color:$white;
     text-align: center;
     .arrow-up{
         text-align: center;
         font-size: 10vh;
-        position: absolute;
-        top: 705vh;
-
+        color: white;
+        padding-top: 4vh;
     }
     .navbar{
         padding-top: 9vh;
@@ -143,5 +141,20 @@ footer{
         color: white;
         font-size: 8vh;
     }
+    .content{
+        height: 4vh;
+        background-color:black;
+        text-align: center;
+        width: 100%;
+    }
+    .column{
+        background-color: black;
+    }
+    .navbar-start{
+        text-align: center;
+
+    }
 }
+
+
 
