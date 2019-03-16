@@ -90,6 +90,7 @@ body{
         .column{
             width: 100%;
             height: $full-screen;
+            padding: 12vh;
 
             &.half{
                 flex-grow: 1;
@@ -207,6 +208,8 @@ body{
         }
         .column{
             height: auto;
+            padding: 1vh !important;
+
             .skills{
                 padding: 1vh !important;
                 display: flex;
