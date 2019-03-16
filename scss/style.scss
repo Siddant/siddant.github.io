@@ -64,19 +64,6 @@ body{
         text-align: center;
         .column{
             background-color: black;
-            &:nth-child(1){
-                height: 70vh;
-                background-color: green;
-
-            }
-            &:nth-child(2){
-                height: 30vh;
-                background-color: red;
-
-            }
-
-
-
         }
     }
   }
@@ -110,6 +97,12 @@ body{
         .image{
             height: 60vh;
             width: auto;
+        }
+        &.content{
+            height: 70vh;
+        }
+        &.arrow{
+            height: 30vh;
         }
     }
 }
@@ -152,10 +145,10 @@ footer{
     }
 }
 
-// .fas{
-//     &:hover{
-//         font-size: 12vh;
+.fas{
+    &:hover{
+        font-size: 12vh;
 
-//     }
-// }
+    }
+}
 
