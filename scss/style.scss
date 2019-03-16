@@ -12,10 +12,12 @@ $tablet: 1024px;
     scroll-behavior: smooth;
     font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
     "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
 }
 body{
     display: flex;
     flex-wrap: wrap;
+    background-color: black;
 
 }
 
@@ -41,7 +43,6 @@ body{
                     display: none;
                 }
                 .burger{
-                    color: red;
                     font-size: 4vh;
                 }
     
@@ -185,10 +186,7 @@ body{
                         display: flex;
 
                     }
-                    .burger{
-                        color: red;
-                        font-size: 4vh;
-                    }
+
         
                 }
             }
@@ -205,9 +203,7 @@ body{
         flex-wrap: wrap;
         &.multi-column{
             background-color: red;
-            .column{
-                height: auto;
-            }
+
         }
         .column{
             height: auto;
@@ -220,7 +216,6 @@ body{
                     font-size: 10vh;
                     color: black;
                     padding: 1.5vh !important;
-    
                 }
         }
 
