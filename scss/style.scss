@@ -58,14 +58,31 @@ body{
     height: $full-screen;
     width: 100%;
     background-color:$primary-color;
+    background-color: black;
     .hero-body{
-        padding: 40vh;
         color: #F7F7F7;
         text-align: center;
+        .column{
+            background-color: black;
+            &:nth-child(1){
+                height: 70vh;
+                background-color: green;
+
+            }
+            &:nth-child(2){
+                height: 30vh;
+                background-color: red;
+
+            }
+
+
+
+        }
     }
   }
   .parallax{
     height: $full-screen;
+    background-color: black;
 
 }
 
@@ -112,8 +129,6 @@ body{
 .arrow-down{
     text-align: center;
     font-size: 10vh;
-    position: absolute;
-    bottom: 5vh;
 }
 
 footer{
@@ -137,10 +152,10 @@ footer{
     }
 }
 
-.fas{
-    &:hover{
-        font-size: 12vh;
+// .fas{
+//     &:hover{
+//         font-size: 12vh;
 
-    }
-}
+//     }
+// }
 
