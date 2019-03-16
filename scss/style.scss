@@ -17,18 +17,22 @@ $white: #F7F7F7;
     .navbar-menu{
         height:auto;
         background-color: black;
-        .navbar-item{
-            text-decoration: none;
-            color: white;
-            text-align: center;
-            padding: 2.4vh;
-            display:inline-block;
-            margin-left: 1vh;
-            &:hover{
-                background-color: blue;
+        .navbar-start{
+            display: flex;
+            .navbar-item{
+                text-decoration: none;
+                color: white;
+                text-align: center;
+                padding: 2.4vh;
+                display:inline-block;
+                margin-left: 1vh;
+                &:hover{
+                    background-color: blue;
+                }
+    
             }
-
         }
+
     }
 }
 
