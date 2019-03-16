@@ -19,6 +19,8 @@ body{
 
 .navbar{
     height: 7vh;
+    background-color: red;
+    width: 100%;
     .navbar-menu{
         height:auto;
         background-color: black;
@@ -27,12 +29,24 @@ body{
             .navbar-item{
                 text-decoration: none;
                 color: white;
-                text-align: center;
                 padding: 2.4vh;
                 display:inline-block;
                 margin-left: 1vh;
+                text-align:center;
+
                 &:hover{
                     background-color: blue;
+                }
+                &:nth-child(6){
+                    justify-content:flex-end;
+                    width: 30vh;
+                    flex-grow:flex-end ;
+                    display: none;
+
+                }
+                .burger{
+                    color: red;
+                    font-size: 4vh;
                 }
     
             }
@@ -74,7 +88,6 @@ body{
         width: 100%;
         flex-grow: 1;
         height: $full-screen;
-        padding: 6vh;
         &.half{
             width: 50%;
         }
@@ -105,6 +118,6 @@ body{
 }
 
 footer{
-    height: 65vh;
+    height:$full-screen;
     background-color:$white;
 }
