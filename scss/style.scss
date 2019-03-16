@@ -16,7 +16,9 @@ $tablet: 1024px;
 body{
     display: flex;
     flex-wrap: wrap;
+
 }
+
 
 
 .navbar{
@@ -35,9 +37,8 @@ body{
                 margin-left: 1vh;
                 text-align:center;
 
-                &:nth-child(6){
+                &:nth-child(1){
                     display: none;
-
                 }
                 .burger{
                     color: red;
@@ -79,12 +80,16 @@ body{
         flex-grow: 1;
         display: flex;
         
+
+
+
         &.multi-column{
             flex-wrap: wrap;
         }
         .column{
             width: 100%;
             height: $full-screen;
+
             &.half{
                 flex-grow: 1;
             }
@@ -172,7 +177,7 @@ body{
                 display: flex;
                 flex-wrap: wrap;
                 .navbar-item{
-                    // display: none;
+                    display: none;
                     justify-content: center;
                     width: 100%;
 
@@ -198,21 +203,34 @@ body{
     .columns { 
         display: flex;
         flex-wrap: wrap;
-        .skills{
-            padding: 0 !important;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            background-color: green;
-            .skills-icon{
-                font-size: 10vh;
-                color: black;
-                padding: 0 !important;
-
+        &.multi-column{
+            background-color: red;
+            .column{
+                height: auto;
             }
+        }
+        .column{
+            height: auto;
+            .skills{
+                padding: 1vh !important;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                .skills-icon{
+                    font-size: 10vh;
+                    color: black;
+                    padding: 1.5vh !important;
+    
+                }
+        }
+
         }
 
     }  
+
+
+
+
 }
 
 
