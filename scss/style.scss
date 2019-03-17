@@ -10,8 +10,9 @@ $tablet: 1024px;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
-    "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    // font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
+    // "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: 'ZCOOL XiaoWei', serif;
 
 }
 body{
@@ -21,16 +22,18 @@ body{
 }
 
 
+// .title, 
+
 .section{
     padding: 4vh;
     background-color: white;
-
 }
 
 
 .navbar{
     height: 7vh;
     width: 100%;
+    position: fixed;
     .navbar-menu{
         height:auto;
         .navbar-start{
@@ -43,7 +46,7 @@ body{
                 margin-left: 1vh;
                 text-align:center;
 
-                &:nth-child(1){
+                &:nth-child(6){
                     display: none;
                 }
                 .burger{
@@ -64,6 +67,9 @@ body{
         color: #F7F7F7;
         text-align: center;
         .column{
+            &:nth-child(1){
+                padding-top: 30vh;            
+            }
             background-color: black;
         }
     }
