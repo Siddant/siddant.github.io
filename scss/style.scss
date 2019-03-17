@@ -95,8 +95,6 @@ body{
         background-color:#F7F7F7;
         flex-grow: 1;
         display: flex;
-        
-
         &.multi-column{
             flex-wrap: wrap;
         }
@@ -183,6 +181,7 @@ body{
 
 
 @media only screen and (max-width: $mobile) {
+
     .navbar{
         height: auto;
         width: 100%;
@@ -232,7 +231,20 @@ body{
 
         }
 
-    }  
+    } 
+    
+    
+    .hero{
+
+        .hero-body{
+
+            .column{
+                &:nth-child(1){
+                    padding-top: 20vh !important;            
+                }
+            }
+        }
+      }
 
 
 
