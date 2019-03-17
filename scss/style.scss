@@ -97,6 +97,7 @@ body{
 
             &.half{
                 flex-grow: 1;
+                padding: 5vh;
             }
             .image{
                 height: 60vh;
@@ -116,7 +117,7 @@ body{
                 .skills-icon{
                     font-size: 10vh;
                     color: black;
-                    // padding: 2vh 5vh;
+                    padding: 5vh;
                 }
             }
         }
@@ -200,7 +201,10 @@ body{
 
 
 
+    .section{
+        padding: 0vh !important;
 
+    }
 
     .columns { 
         display: flex;
@@ -208,10 +212,9 @@ body{
 
         .column{
             height: auto;
-            padding: 1vh !important;
+            padding: 0vh !important;
 
             .skills{
-                padding: 1vh !important;
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
