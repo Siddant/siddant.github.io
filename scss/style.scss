@@ -26,7 +26,7 @@ body{
 
  .title, p{
      margin-bottom: 2vh;
-     line-height: 4vh;
+     line-height: 3vh;
      &.centered{
         text-align:center;
         // margin-top: 4vh;
@@ -117,23 +117,27 @@ body{
         }
         .column{
             width: 100%;
-            height: auto;
+            height: $full-screen;
             display: flex;
             flex-direction: column;
             &.half{
-                // flex-grow: 1;
-                height: $full-screen;
-
                 width: 45%;
-
-                padding: 6vh 0 5vh 5vh;;
+                padding: 4vh;
 
             }
             .image{
                 // height: 60vh;
                 // width: 100%;
-                height:auto;
-                width: 40vh;
+                &.profile{
+                    height:auto;
+                    width: 40vh;
+                }
+                &.centered{
+                    margin-left: auto;
+                    margin-right: auto;
+                 }
+                height:50vh;
+                width: auto;
             }
             &.content{
                 height: 70vh;
@@ -261,8 +265,7 @@ body{
                 // height: $full-screen;
                 width: 100%;
 
-                padding: 6vh 0 5vh 5vh;
-
+                padding: 4vh;
             }
             .skills{
                 display: flex;
