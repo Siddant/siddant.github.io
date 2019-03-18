@@ -27,10 +27,15 @@ body{
  .title, p{
      margin-bottom: 2vh;
      line-height: 4vh;
+     &.centered{
+        text-align:center;
+        // margin-top: 4vh;
+     }
  }
 
+
 .section{
-    // padding: 4vh;
+    padding-top: 9vh;
     background-color:#F7F7F7;
     
 
