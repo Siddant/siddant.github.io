@@ -26,11 +26,13 @@ body{
 
  .title, p{
      margin-bottom: 2vh;
+     line-height: 32px;
  }
 
 .section{
-    padding: 4vh;
+    // padding: 4vh;
     background-color:#F7F7F7;
+    
 
 }
 
@@ -101,19 +103,26 @@ body{
     
     .columns{
         // background-color:#F7F7F7;
-        flex-grow: 1;
         display: flex;
+        justify-content: center;
+
+        height: auto;
         &.multi-column{
             flex-wrap: wrap;
         }
         .column{
             width: 100%;
-            height: $full-screen;
-            // padding: 12vh;
-
+            height: auto;
+            display: flex;
+            flex-direction: column;
             &.half{
-                flex-grow: 1;
-                padding: 5vh;
+                // flex-grow: 1;
+                height: $full-screen;
+
+                width: 45%;
+
+                padding: 6vh 0 5vh 5vh;;
+
             }
             .image{
                 // height: 60vh;
@@ -135,7 +144,7 @@ body{
                 // padding: 15vh 5vh;
                 display: flex;
                 flex-wrap: wrap;
-                align-items: center;
+                justify-content: center;
                 .skills-icon{
                     font-size: 10vh;
                     color: black;
