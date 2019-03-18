@@ -251,6 +251,14 @@ body{
             height: auto;
             // padding: 0vh !important;
 
+            &.half{
+                // flex-grow: 1;
+                // height: $full-screen;
+                width: 100%;
+
+                padding: 6vh 0 5vh 5vh;
+
+            }
             .skills{
                 display: flex;
                 flex-wrap: wrap;
