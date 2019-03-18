@@ -21,6 +21,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     background-color: black;
+    
 }
 
 
@@ -116,6 +117,9 @@ body{
             }
             &.arrow{
                 height: 20vh;
+                .fas, .fab{
+                    margin-top: 5vh;
+                }
             }
             .skills{
                 // padding: 15vh 5vh;
@@ -167,9 +171,7 @@ body{
     text-align: center;
     font-size: 10vh;
 }
-.fas, .fab{
-    margin-top: 5vh;
-}
+
 
 
 
@@ -216,7 +218,7 @@ body{
 
         .column{
             height: auto;
-            padding: 0vh !important;
+            // padding: 0vh !important;
 
             .skills{
                 display: flex;
