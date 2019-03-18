@@ -39,7 +39,9 @@ body{
     height: 7vh;
     width: 100%;
     position: fixed;
-    // background-color: black;
+    background-color: black;
+    box-shadow: 0 3px 0 rgba(0,0,0,0.6);
+
     .navbar-menu{
         height:auto;
         .navbar-start{
