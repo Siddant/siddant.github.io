@@ -29,7 +29,6 @@ body{
      line-height: 3vh;
      &.centered{
         text-align:center;
-        // margin-top: 4vh;
      }
  }
 
@@ -199,7 +198,13 @@ body{
 .arrow-down, .arrow-up{
     text-align: center;
     font-size: 10vh;
-    color: white;         
+    color: white;   
+    -webkit-transition: font-size 1s, height 4s; /* For Safari 3.1 to 6.0 */
+    transition: font-size 1s, height 4s;
+    &:hover{
+        font-size: 12vh;
+
+    }      
 
 }
 
