@@ -31,7 +31,7 @@ body{
 
 .section{
     padding: 4vh;
-    background-color: white;
+    background-color:#F7F7F7;
 }
 
 
@@ -39,7 +39,7 @@ body{
     height: 7vh;
     width: 100%;
     position: fixed;
-    background-color: black;
+    // background-color: black;
     .navbar-menu{
         height:auto;
         .navbar-start{
@@ -70,20 +70,25 @@ body{
     background-color:$primary-color;
     background-color: black;
     .hero-body{
-        color: #F7F7F7;
+        // color: #F7F7F7;
         text-align: center;
         .column{
             &:nth-child(1){
-                padding-top: 30vh;            
+                padding-top: 30vh;   
+                color: white;         
             }
-            background-color: black;
+            // background-color: black;
         }
     }
   }
   .parallax{
     height: $full-screen;
     background-color: black;
+    // background-size: cover;
+    // background-image: url('https://visualcocaine.org/public/uploads/large/191512467154mhnqdac6kkbqrpewsmarmfi1uagruo1zg7lo8qxgjyaynoqgiffni5mw2tlfi8jxdpu4nq8p3idqz3hq84lwcmfjc5ibpw0dc1xz.jpg');
+    // opacity: 0.4;
 }
+
 
 
 
@@ -93,7 +98,7 @@ body{
 }
     
     .columns{
-        background-color:#F7F7F7;
+        // background-color:#F7F7F7;
         flex-grow: 1;
         display: flex;
         &.multi-column{
@@ -169,6 +174,7 @@ body{
 .arrow-down, .arrow-up{
     text-align: center;
     font-size: 10vh;
+    color: white;         
 
 }
 
