@@ -53,6 +53,7 @@ body{
         height:auto;
         .navbar-start{
             display: flex;
+
             .navbar-item{
                 text-decoration: none;
                 color: white;
@@ -60,9 +61,12 @@ body{
                 display:inline-block;
                 margin-left: 1vh;
                 text-align:center;
+                // justify-content: flex-end;
 
                 &:nth-child(1){
                     display: none;
+                    // justify-content: flex-start;
+
                 }
                 .burger{
                     font-size: 4vh;
@@ -248,7 +252,7 @@ body{
 
 
     .section{
-        padding: 0vh !important;
+        // padding: 0vh !important;
 
     }
 
@@ -265,7 +269,7 @@ body{
                 // height: $full-screen;
                 width: 100%;
 
-                padding: 4vh;
+                // padding: 4vh;
             }
             .skills{
                 display: flex;
