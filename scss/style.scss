@@ -31,6 +31,10 @@ body{
      &.centered{
         text-align:center;
      }
+     &.mobile{
+        display:none;
+
+     }
  }
 
 
@@ -375,6 +379,7 @@ body{
     } 
     
     
+    
     .hero{
 
         .hero-body{
@@ -386,6 +391,19 @@ body{
             }
         }
       }
+
+
+      .title, p{
+
+        &.desktop{
+           display:none;
+        }
+        &.mobile{
+            display: block;
+
+        }
+    }
+
 
 }
 
