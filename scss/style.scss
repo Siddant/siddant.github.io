@@ -107,13 +107,15 @@ body{
 }
 
 .button{
-    background-color: red;
+    // background-color: red;
     border-radius: 4px;
-    // padding: 6px 10px;
-    margin-right: 4vh; 
-
-    height: 3.5vh;
-    width: 45%;
+    padding: 1vh;
+    // margin-right: 4vh; 
+    border: 1px solid black;
+    height: 5vh;
+    width:  100%;
+    margin: 6px;
+    text-decoration: none;
 }
 
 
