@@ -1,4 +1,4 @@
-let parallax;
+// let parallax;
 
 // function scrollTop(e) {
 // 	e.preventDefault();
@@ -14,3 +14,9 @@ let parallax;
 // 	parallax = document.querySelector('.parallax');
 // 	window.addEventListener('scroll', parallaxScroll);
 // });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.box a');
+
+})

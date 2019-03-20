@@ -442,7 +442,7 @@ body{
                     display: flex;
                 }
                 .navbar-item{
-                    display: none;
+                    display:inline-block;
                     text-align:center;
                     width: 100%;
                     flex-grow: 1;
