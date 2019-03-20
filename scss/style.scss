@@ -60,7 +60,7 @@ body{
 
 
 .navbar{
-    height: 7vh;
+    height: auto;
     width: 100%;
     position: fixed;
     background-color: black;
@@ -73,6 +73,8 @@ body{
         }
         .navbar-start{
             display: flex;
+            height: 7vh;
+
             .navbar-item{
                 text-decoration: none;
                 color: white;
@@ -440,6 +442,7 @@ body{
             .navbar-start{
                 display: none;
                 flex-wrap: wrap;
+                transition: all .5s ease-in-out;
 
                 .navbar-item{
                     // display:inline-block;
