@@ -74,6 +74,7 @@ body{
         .navbar-start{
             display: flex;
             height: 7vh;
+            background-color: blue;
 
             .navbar-item{
                 text-decoration: none;
@@ -436,21 +437,27 @@ body{
         width: 100%;
         .navbar-menu{
             height:auto;
+
             .hamburger{
                 display: flex;
             }      
             .navbar-start{
-                display: none;
+                // display: none;
+                // max-height: 3000vh;
+
                 flex-wrap: wrap;
                 transition: all .5s ease-in-out;
-
+                background-color: blue;
+                height: 42vh;
                 .navbar-item{
                     // display:inline-block;
+                    // padding: 0vh !important;
+                     margin-left: 0vh; 
                     text-align:center;
                     width: 100%;
-                    flex-grow: 1;
+                    // flex-grow: 1;
                     font-size: 3vh;
-                    background-color: red;
+                    // background-color: red;
                 }
             }
         }
