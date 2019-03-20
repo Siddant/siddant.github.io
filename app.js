@@ -17,6 +17,20 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const burger = document.querySelector('.box a');
+    const hamburger = document.querySelector('.hamburger');
+
+    function toggleHamburger() {
+        if (hamburger.classList.length > 2) {
+            hamburger.classList.remove('is-active')
+        } else {
+            hamburger.classList.add('is-active')
+
+        }
+    }
+
+    console.log(hamburger)
+
+    hamburger.addEventListener('click', toggleHamburger);
+
 
 })
