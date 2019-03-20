@@ -68,11 +68,11 @@ body{
 
     .navbar-menu{
         height:auto;
+        .hamburger{
+            display: none;
+        }
         .navbar-start{
             display: flex;
-            .hamburger{
-                display: none;
-            }
             .navbar-item{
                 text-decoration: none;
                 color: white;
@@ -434,18 +434,20 @@ body{
         width: 100%;
         .navbar-menu{
             height:auto;
-            
-            .navbar-start{
+            .hamburger{
                 display: flex;
+            }      
+            .navbar-start{
+                display: none;
                 flex-wrap: wrap;
-                .hamburger{
-                    display: flex;
-                }
+
                 .navbar-item{
-                    display:inline-block;
+                    // display:inline-block;
                     text-align:center;
                     width: 100%;
                     flex-grow: 1;
+                    font-size: 3vh;
+                    background-color: red;
                 }
             }
         }
