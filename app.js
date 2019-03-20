@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
             hamburger.classList.remove('is-active')
             navigationBar.style.height = '0vh'
             navigationBar.style.fontSize = '0vh'
-
         } else {
             hamburger.classList.add('is-active')
             navigationBar.style.height = '42vh'
