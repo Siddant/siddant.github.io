@@ -58,12 +58,12 @@ body{
 
 
 .navbar{
-    height: auto;
+    // height: auto;
     width: 100%;
     position: fixed;
     background-color: black;
     box-shadow: 0 3px 0 rgba(0,0,0,0.6);
-
+    z-index: 1;
     .navbar-menu{
         height:auto;
         .hamburger{
@@ -73,18 +73,16 @@ body{
         .navbar-start{
             display: flex;
             height: 7vh;
-            &.desktop{
-                height: 7vh;
-                font-size: 2vh;
 
-            }
             .navbar-item{
                 text-decoration: none;
                 color: white;
                 padding: 2.4vh;
-                display:inline-block;
+                display: block;
                 margin-left: 1vh;
                 text-align:center;
+                font-size: 2.5vh;
+
                 .burger{
                     font-size: 4vh;
                 }
@@ -395,14 +393,11 @@ body{
                 flex-wrap: wrap;
                 transition: all .5s ease-in-out;
                 display: flex;
-                &.mobile{
-                    height: 0vh;
-                    font-size: 3vh;
-
-                }
                 .navbar-item{
                     margin-left: 0vh; 
                     width: 100%;
+                    font-size: 3vh;
+
                 }
             }
         }
