@@ -35,9 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 // navigationBarItems.classList.remove('is-active')
                 // console.log(navigation.getElementsByClassName('is-active')[0].classList.remove('is-active'))
 
-                navigation.getElementsByClassName('is-active')[0].classList.remove('is-active')
-                // navigation.getElementsByTagName(`a[href=${}]`);
-                console.log(elem)
+                navigation.getElementsByClassName('is-active')[0].classList.remove('is-active');
+                // navigation.getElementsByTagName(`a[href=${elem.getAttribute('id')}]`);
+                document.querySelector(`[href='#${elem.getAttribute('id')}']`).classList.add('is-active');
+
+
+
+                // console.log(`#${elem.getAttribute('id')}`)
+                // console.log(document.querySelector("[href='#home']"))
 
             }
 
