@@ -27,12 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function handleScrollEvent() {
-        let currentPostion = (document.documentElement.scrollTop || document.body.scrollTop) + 50
 
+        let currentPostion = document.documentElement.scrollTop || document.body.scrollTop
         sections.forEach(elem => {
+
             let top = elem.offsetTop - navHeight
             let bottom = elem.offsetHeight + top
-            if (currentPostion >= top && currentPostion <= bottom) {
+            if (currentPostion >= top && currentPostion <= bottom || (elem.className == 'footer section' && currentPostion + 200 >= top && currentPostion + 200 <= bottom)) {
                 console.log(elem.className)
                 navigation.getElementsByClassName('is-active')[0].classList.remove('is-active');
                 document.querySelector(`[href='#${elem.getAttribute('id')}']`).classList.add('is-active');

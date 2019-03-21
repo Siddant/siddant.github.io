@@ -53,7 +53,15 @@ body{
 .section{
     padding-top: 9vh;
     background-color:#F7F7F7;
-
+    &:nth-child(1){
+        background-color: red;
+    }
+    &:nth-child(2){
+        background-color: blue;
+    }
+    &:nth-child(3){
+        background-color: green;
+    }
 }
 
 
@@ -62,7 +70,7 @@ body{
     width: 100%;
     position: fixed;
     background-color: black;
-    box-shadow: 0 3px 0 rgba(0,0,0,0.6);
+    box-shadow: 0 3px 0 rgba(0,0,0,6);
     z-index: 1;
     .navbar-menu{
         height:auto;
