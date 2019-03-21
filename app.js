@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const navigationBar = document.querySelector('.navbar-start');
     const navigationBarItems = document.querySelectorAll('.navbar-start .navbar-item');
     const section = document.querySelectorAll('.section');
-    let nav_height = navigation.offsetHeight;
+    let navHeight = navigation.offsetHeight;
 
     console.log(navigationBarItems)
     console.log(section)
-    console.log(nav_height)
+    // console.log(nav_height)
     console.log(this)
 
     function toggleHamburger() {
@@ -26,7 +26,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function handleScrollEvent() {
-        console.log('here')
+        let currentPostion = document.documentElement.scrollTop || document.body.scrollTop
+        section.forEach(elem => {
+            let top = elem.offsetTop - navHeight
+            let bottom = elem.offsetHeight + top
+
+            console.log(top + 'top')
+            console.log(bottom + 'bottom')
+
+        })
+
+        console.log(currentPostion)
     }
 
     hamburger.addEventListener('click', toggleHamburger);
