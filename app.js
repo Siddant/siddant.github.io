@@ -4,13 +4,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const navigationBar = document.querySelector('.navbar-start');
     const navigationBarItems = document.querySelectorAll('.navbar-start .navbar-item');
+    const navigationBarItemsArray = Array.from(navigationBarItems)
+
     const section = document.querySelectorAll('.section');
     let navHeight = navigation.offsetHeight;
 
     console.log(navigationBarItems)
-    console.log(section)
-    // console.log(nav_height)
-    console.log(this)
+
 
     function toggleHamburger() {
         if (hamburger.classList.length > 2) {
@@ -31,8 +31,15 @@ document.addEventListener('DOMContentLoaded', () => {
             let top = elem.offsetTop - navHeight
             let bottom = elem.offsetHeight + top
 
-            console.log(top + 'top')
-            console.log(bottom + 'bottom')
+            if (currentPostion >= top && currentPostion <= bottom) {
+                // navigationBarItems.classList.remove('is-active')
+                // console.log(navigation.getElementsByClassName('is-active')[0].classList.remove('is-active'))
+
+                navigation.getElementsByClassName('is-active')[0].classList.remove('is-active')
+                // navigation.getElementsByTagName(`a[href=${}]`);
+                console.log(elem)
+
+            }
 
         })
 
