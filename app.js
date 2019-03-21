@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navigation = document.querySelector('.navbar');
 
     const navigationBar = document.querySelector('.navbar-start');
-    const navigationBarItems = document.querySelectorAll('.navbar-start .navbar-item');
+    // const navigationBarItems = document.querySelectorAll('.navbar-start .navbar-item');
 
     const sections = document.querySelectorAll('.section');
     const navHeight = navigation.offsetHeight;
@@ -22,15 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
             hamburger.classList.add('is-active')
             navigationBar.style.height = '42vh'
             navigationBar.style.fontSize = '3vh'
-
         }
     }
 
-    function handleScrollEvent() {
 
+    function handleScrollEvent() {
         let currentPostion = document.documentElement.scrollTop || document.body.scrollTop
         sections.forEach(elem => {
-
             let top = elem.offsetTop - navHeight
             let bottom = elem.offsetHeight + top
             if (currentPostion >= top && currentPostion <= bottom || (elem.className == 'footer section' && currentPostion + 200 >= top && currentPostion + 200 <= bottom)) {
@@ -39,8 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.querySelector(`[href='#${elem.getAttribute('id')}']`).classList.add('is-active');
             }
         })
-
-
     }
 
     hamburger.addEventListener('click', toggleHamburger);
