@@ -4,12 +4,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const navigationBar = document.querySelector('.navbar-start');
     const navigationBarItems = document.querySelectorAll('.navbar-start .navbar-item');
-    const navigationBarItemsArray = Array.from(navigationBarItems)
 
-    const section = document.querySelectorAll('.section');
-    let navHeight = navigation.offsetHeight;
+    const sections = document.querySelectorAll('.section');
+    const navHeight = navigation.offsetHeight;
+    const footerHeight = sections[1].offsetHeight
 
-    console.log(navigationBarItems)
+    console.log(footerHeight)
+    console.log(sections[4].offsetHeight)
 
 
     function toggleHamburger() {
@@ -26,29 +27,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function handleScrollEvent() {
-        let currentPostion = document.documentElement.scrollTop || document.body.scrollTop
-        section.forEach(elem => {
+        let currentPostion = (document.documentElement.scrollTop || document.body.scrollTop) + 50
+
+        sections.forEach(elem => {
             let top = elem.offsetTop - navHeight
             let bottom = elem.offsetHeight + top
-
             if (currentPostion >= top && currentPostion <= bottom) {
-                // navigationBarItems.classList.remove('is-active')
-                // console.log(navigation.getElementsByClassName('is-active')[0].classList.remove('is-active'))
-
+                console.log(elem.className)
                 navigation.getElementsByClassName('is-active')[0].classList.remove('is-active');
-                // navigation.getElementsByTagName(`a[href=${elem.getAttribute('id')}]`);
                 document.querySelector(`[href='#${elem.getAttribute('id')}']`).classList.add('is-active');
-
-
-
-                // console.log(`#${elem.getAttribute('id')}`)
-                // console.log(document.querySelector("[href='#home']"))
-
             }
-
         })
 
-        console.log(currentPostion)
+
     }
 
     hamburger.addEventListener('click', toggleHamburger);
@@ -57,25 +48,3 @@ document.addEventListener('DOMContentLoaded', () => {
     AOS.init();
 
 })
-
-
-/*var sections = $('section')
-  , nav = $('nav')
-  , nav_height = nav.outerHeight();
-
-$(window).on('scroll', function () {
-  var cur_pos = $(this).scrollTop();
-
-  sections.each(function() {
-    var top = $(this).offset().top - nav_height,
-        bottom = top + $(this).outerHeight();
-
-    if (cur_pos >= top && cur_pos <= bottom) {
-      nav.find('a').removeClass('active');
-      sections.removeClass('active');
-
-      $(this).addClass('active');
-      nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
-    }
-  });
-}); */
