@@ -72,7 +72,9 @@ body{
 
         .navbar-start{
             display: flex;
-            height: 7vh;
+            height: auto;
+            transition: all .5s ease-in-out;
+            font-size: 4vh;
 
             .navbar-item{
                 text-decoration: none;
@@ -81,8 +83,6 @@ body{
                 display: block;
                 margin-left: 1vh;
                 text-align:center;
-                font-size: 2.5vh;
-
                 .burger{
                     font-size: 4vh;
                 }
@@ -393,7 +393,7 @@ body{
                 height: 0vh;
                 overflow: hidden;
                 flex-wrap: wrap;
-                transition: all .5s ease-in-out;
+                // transition: all .5s ease-in-out;
                 display: flex;
                 .navbar-item{
                     margin-left: 0vh; 

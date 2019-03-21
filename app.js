@@ -3,15 +3,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const navigation = document.querySelector('.navbar');
 
     const navigationBar = document.querySelector('.navbar-start');
-    // const navigationBarItems = document.querySelectorAll('.navbar-start .navbar-item');
+    const navigationBarItems = document.querySelectorAll('.navbar-item');
 
     const sections = document.querySelectorAll('.section');
     const navHeight = navigation.offsetHeight;
-    const footerHeight = sections[1].offsetHeight
+    const heroHeight = sections[0].offsetHeight / 2
 
-    console.log(footerHeight)
-    console.log(sections[4].offsetHeight)
-
+    console.log(navigationBarItems[0].style.fontSize)
+    // navigationBarItems[0].style.fontSize = 1 + 'vh'
 
     function toggleHamburger() {
         if (hamburger.classList.length > 2) {
@@ -28,6 +27,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function handleScrollEvent() {
         let currentPostion = document.documentElement.scrollTop || document.body.scrollTop
+        let naviagtionfontSize = navigationBarItems[0].style.fontSize
+        if (currentPostion >= heroHeight) {
+            // navigationBarItems.forEach(elem => elem.style.fontSize = 2 + 'vh')
+            navigationBar.style.fontSize = 2.5 + 'vh'
+        } else {
+            navigationBar.style.fontSize = 4 + 'vh'
+
+        }
+
         sections.forEach(elem => {
             let top = elem.offsetTop - navHeight
             let bottom = elem.offsetHeight + top
