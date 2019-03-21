@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     const navigationBar = document.querySelector('.navbar-start');
     const navigationBarItems = document.querySelectorAll('.navbar-start .navbar-item');
-    console.log(navigationBar)
+    console.log(navigationBarItems)
 
     function toggleHamburger() {
         if (hamburger.classList.length > 2) {

@@ -86,7 +86,9 @@ body{
                 .burger{
                     font-size: 4vh;
                 }
-    
+                &.is-active{
+                    color:red;
+                }
             }
         }
     }
