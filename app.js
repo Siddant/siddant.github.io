@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     const navigationBar = document.querySelector('.navbar-start');
     const navigationBarItems = document.querySelectorAll('.navbar-start .navbar-item');
-    console.log(navigationBarItems)
+    console.log(navigationBar)
 
     function toggleHamburger() {
         if (hamburger.classList.length > 2) {
@@ -18,5 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     hamburger.addEventListener('click', toggleHamburger);
+    AOS.init();
 
 })

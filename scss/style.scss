@@ -69,10 +69,15 @@ body{
         .hamburger{
             display: none;
         }
+
         .navbar-start{
             display: flex;
             height: 7vh;
+            &.desktop{
+                height: 7vh;
+                font-size: 2vh;
 
+            }
             .navbar-item{
                 text-decoration: none;
                 color: white;
@@ -375,13 +380,11 @@ body{
 
 
 @media only screen and (max-width: $mobile) {
-
     .navbar{
         height: auto;
         width: 100%;
         .navbar-menu{
             height:auto;
-
             .hamburger{
                 display: flex;
             }      
@@ -392,18 +395,17 @@ body{
                 flex-wrap: wrap;
                 transition: all .5s ease-in-out;
                 display: flex;
+                &.mobile{
+                    height: 0vh;
+                    font-size: 3vh;
+
+                }
                 .navbar-item{
                     margin-left: 0vh; 
                     width: 100%;
-                    font-size: 3vh;
                 }
             }
         }
-    }
-
-    .section{
-        // padding: 0vh !important;
-
     }
 
     .columns { 
@@ -412,7 +414,6 @@ body{
 
         .column{
             height: auto;
-            // padding: 0vh !important;
 
             &.half{
                 width: 100%;
@@ -453,7 +454,6 @@ body{
             }
         }
       }
-
 
       .title, p{
 
