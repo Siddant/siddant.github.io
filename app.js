@@ -30,9 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
         let naviagtionfontSize = navigationBarItems[0].style.fontSize
         if (currentPostion >= heroHeight) {
             // navigationBarItems.forEach(elem => elem.style.fontSize = 2 + 'vh')
-            navigationBar.style.fontSize = 2.5 + 'vh'
+            navigationBar.classList.add('activate')
         } else {
-            navigationBar.style.fontSize = 4 + 'vh'
+            navigationBar.classList.remove('activate')
 
         }
 

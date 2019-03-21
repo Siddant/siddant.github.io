@@ -75,14 +75,25 @@ body{
             height: auto;
             transition: all .5s ease-in-out;
             font-size: 4vh;
+            color: white;
+
+            &.activate{
+                font-size: 2.5vh;
+                background-color: #FFFFFF;
+                .navbar-item{
+                    color: black;
+
+                }
+            }
 
             .navbar-item{
                 text-decoration: none;
-                color: white;
                 padding: 2.4vh;
                 display: block;
                 margin-left: 1vh;
                 text-align:center;
+                color: white;
+
                 .burger{
                     font-size: 4vh;
                 }
