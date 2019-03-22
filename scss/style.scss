@@ -227,6 +227,13 @@ body{
 
         .footer-icon{
             font-size: 8vh;
+            color: #FFFFFF;
+            opacity: 0.5;
+            filter: alpha(opacity=50); /* For IE8 and earlier */
+            &:hover{
+                opacity: 1;
+                filter: alpha(opacity=100); /* For IE8 and earlier */
+            }
         }
         .columns{
             .column{
