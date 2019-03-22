@@ -15,12 +15,18 @@ document.addEventListener('DOMContentLoaded', () => {
     function toggleHamburger() {
         if (hamburger.classList.length > 2) {
             hamburger.classList.remove('is-active')
-            navigationBar.style.height = '0vh'
-            navigationBar.style.fontSize = '0vh'
+            navigationBar.classList.remove('height-size')
+
+            // navigationBar.style.height = '0vh'
+            // navigationBar.style.display = 'none'
+
         } else {
             hamburger.classList.add('is-active')
-            navigationBar.style.height = '42vh'
-            navigationBar.style.fontSize = '3vh'
+            // navigationBar.style.height = '42vh'
+            navigationBar.classList.add('height-size')
+
+            // navigationBar.style.display = 'flex'
+
         }
     }
 
@@ -32,9 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentPostion >= heroHeight) {
             // navigationBarItems.forEach(elem => elem.style.fontSize = 2 + 'vh')
             navigationBar.classList.add('scroll-activate')
+            navigation.classList.add('shadow')
+
+
         } else {
             navigationBar.classList.remove('scroll-activate')
-
+            navigation.classList.remove('shadow')
         }
 
         sections.forEach(elem => {
