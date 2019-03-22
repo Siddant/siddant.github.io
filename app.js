@@ -64,6 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.addEventListener('click', toggleHamburger);
     window.addEventListener('scroll', handleScrollEvent);
 
-    AOS.init();
+    AOS.init({
+        once: true
+    });
 
 })
