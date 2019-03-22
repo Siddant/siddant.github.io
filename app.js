@@ -26,13 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     function handleScrollEvent() {
+
         let currentPostion = document.documentElement.scrollTop || document.body.scrollTop
         let naviagtionfontSize = navigationBarItems[0].style.fontSize
         if (currentPostion >= heroHeight) {
             // navigationBarItems.forEach(elem => elem.style.fontSize = 2 + 'vh')
-            navigationBar.classList.add('activate')
+            navigationBar.classList.add('scroll-activate')
         } else {
-            navigationBar.classList.remove('activate')
+            navigationBar.classList.remove('scroll-activate')
 
         }
 
@@ -40,9 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
             let top = elem.offsetTop - navHeight
             let bottom = elem.offsetHeight + top
             if (currentPostion >= top && currentPostion <= bottom || (elem.className == 'footer section' && currentPostion + 200 >= top && currentPostion + 200 <= bottom)) {
-                console.log(elem.className)
-                navigation.getElementsByClassName('is-active')[0].classList.remove('is-active');
-                document.querySelector(`[href='#${elem.getAttribute('id')}']`).classList.add('is-active');
+                navigation.getElementsByClassName('active')[0].classList.remove('active');
+                document.querySelector(`[href='#${elem.getAttribute('id')}']`).classList.add('active');
             }
         })
     }
