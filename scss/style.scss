@@ -408,25 +408,16 @@ body{
             .navbar-start{
                 overflow: hidden;
                 flex-wrap: wrap;
-                // display: flex;
-                // height: auto;
-                // height: 0vh;
-                // display: none;
-                // &.desktop{
-                //     display: none;
-                // }
                 &.mobile{
                     height: 0vh;
                 }
                 &.height-size{
                     height: 42vh;
-
                 }
                 .navbar-item{
                     margin-left: 0vh; 
                     width: 100%;
                     font-size: 3vh;
-
                 }
             }
         }
