@@ -13,21 +13,26 @@ document.addEventListener('DOMContentLoaded', () => {
     // navigationBarItems[0].style.fontSize = 1 + 'vh'
 
     function toggleHamburger() {
-        if (hamburger.classList.length > 2) {
-            hamburger.classList.remove('is-active')
-            navigationBar.classList.remove('height-size')
 
-            // navigationBar.style.height = '0vh'
-            // navigationBar.style.display = 'none'
 
-        } else {
-            hamburger.classList.add('is-active')
-            // navigationBar.style.height = '42vh'
-            navigationBar.classList.add('height-size')
+        hamburger.classList.toggle('is-active');
+        navigationBar.classList.toggle('height-size');
 
-            // navigationBar.style.display = 'flex'
+        // if (hamburger.classList.length > 2) {
+        //     hamburger.classList.remove('is-active')
+        //     navigationBar.classList.remove('height-size')
 
-        }
+        //     // navigationBar.style.height = '0vh'
+        //     // navigationBar.style.display = 'none'
+
+        // } else {
+        //     hamburger.classList.add('is-active')
+        //     // navigationBar.style.height = '42vh'
+        //     navigationBar.classList.add('height-size')
+
+        //     // navigationBar.style.display = 'flex'
+
+        // }
     }
 
 
