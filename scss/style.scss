@@ -411,18 +411,17 @@ body{
                 // display: flex;
                 // height: auto;
                 // height: 0vh;
-                display: none;
+                // display: none;
                 // &.desktop{
                 //     display: none;
                 // }
                 &.mobile{
                     height: 0vh;
-                    .height-size{
-                        height: 42vh;
-
-                    }
                 }
+                &.height-size{
+                    height: 42vh;
 
+                }
                 .navbar-item{
                     margin-left: 0vh; 
                     width: 100%;
