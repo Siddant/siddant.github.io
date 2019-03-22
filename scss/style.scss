@@ -61,8 +61,7 @@ body{
     // height: auto;
     width: 100%;
     position: fixed;
-    background-color: black;
-    box-shadow: 0 3px 0 rgba(0,0,0,6);
+    box-shadow: 0 3px 0 rgba(0,0,0,0.42);
     z-index: 1;
     .navbar-menu{
         height:auto;
@@ -73,15 +72,15 @@ body{
         .navbar-start{
             display: flex;
             height: auto;
-            transition: all .5s ease-in-out;
+            transition: all 1s ease-in-out;
             font-size: 4vh;
             color: white;
-
+            justify-content:center;
             &.activate{
                 font-size: 2.5vh;
                 background-color: #FFFFFF;
                 .navbar-item{
-                    color: black;
+                    color: purple;
 
                 }
             }

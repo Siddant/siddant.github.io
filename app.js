@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const sections = document.querySelectorAll('.section');
     const navHeight = navigation.offsetHeight;
-    const heroHeight = sections[0].offsetHeight / 2
+    const heroHeight = sections[0].offsetHeight / 8
 
     console.log(navigationBarItems[0].style.fontSize)
     // navigationBarItems[0].style.fontSize = 1 + 'vh'
