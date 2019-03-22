@@ -79,7 +79,7 @@ body{
         .navbar-start{
             display: flex;
             height: auto;
-            transition: all 1s ease-in-out;
+            transition: all .59s ease-in-out;
             font-size: 4vh;
             color: white;
             justify-content:center;
@@ -104,7 +104,7 @@ body{
                     font-size: 4vh;
                 }
                 &.active{
-                    color:red;
+                    color:#9E9E9E;
                 }
             }
         }
