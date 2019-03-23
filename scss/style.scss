@@ -11,8 +11,13 @@ $tablet: 1024px;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'ZCOOL XiaoWei', serif,"Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
-    "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    // font-family: 'ZCOOL XiaoWei', serif,"Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
+    // "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    // font-family: 'Quicksand', sans-serif;
+    font-family: 'AileronRegular', sans-serif; 
+    font-weight: normal; 
+    font-style: normal; 
+    font-weight: 200;
 
 }
 body{
@@ -89,6 +94,7 @@ body{
                 .navbar-item{
                     color: #3c023c;
 
+
                 }
             }
 
@@ -104,7 +110,9 @@ body{
                     font-size:  32.84px;
                 }
                 &.active{
-                    color:#9E9E9E;
+                    // color:#9E9E9E;
+                    color: red;
+
                 }
             }
         }
