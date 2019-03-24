@@ -51,69 +51,63 @@ body{
  }
 
 
-// .section{
-//     padding-top: 9vh;
-//     background-color:#FFFFFF;
+.section{
+    padding-top: 9vh;
+    background-color:#FFFFFF;
 
-// }
-// .shadow{
-//     -webkit-box-shadow: 1px 9px 14px -6px rgba(0,0,0,0.75);
-//     -moz-box-shadow: 1px 9px 14px -6px rgba(0,0,0,0.75);
-//     box-shadow: 1px 9px 14px -6px rgba(0,0,0,0.75); 
-// }
-
-
-// .navbar{
-//     // height: auto;
-    
-//     width: 100%;
-//     position: fixed;
-
-//     z-index: 1;
-//     .navbar-menu{
-//         height:auto;
-//         .hamburger{
-//             display: none;
-
-//         }
-
-//         .navbar-start{
-//             display: flex;
-//             height: auto;
-//             transition: all .59s ease-in-out;
-//             font-size: 32.84px;
-//             color: white;
-//             justify-content:center;
-//             &.scroll-activate{
-//                 font-size: 20.525px;
-//                 background-color: #FFFFFF;
-//                 .navbar-item{
-//                     color: #3c023c;
+}
+.shadow{
+    -webkit-box-shadow: 1px 9px 14px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 9px 14px -6px rgba(0,0,0,0.75);
+    box-shadow: 1px 9px 14px -6px rgba(0,0,0,0.75); 
+}
 
 
-//                 }
-//             }
+.navbar{
+    height: auto;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    .navbar-menu{
+        height:auto;
+        .hamburger{
+            display: none;
+        }
 
-//             .navbar-item{
-//                 text-decoration: none;
-//                 padding: 19.7px;
-//                 display: block;
-//                 margin-left: 1vh;
-//                 text-align:center;
-//                 color: white;
+        .navbar-start{
+            display: flex;
+            transition: all .59s ease-in-out;
+            font-size: 1.824em;
+            color: white;
+            justify-content:center;
+            &.scroll-activate{
+                font-size: 1.140em;
+                background-color: #FFFFFF;
+                .navbar-item{
+                    color: #3c023c;
+                }
+            }
 
-//                 .burger{
-//                     font-size:  32.84px;
-//                 }
-//                 &.active{
-//                     // color:#9E9E9E;
-//                     color: red;
+            .navbar-item{
+                text-decoration: none;
+                padding: 19.7px;
+                display: block;
+                margin-left: 1vh;
+                text-align:center;
+                color: white;
 
-//                 }
-//             }
-//         }
-//     }
-// }
+                .burger{
+                    font-size:  1.824em;
+                }
+                &.active{
+                    // color:#9E9E9E;
+                    color: red;
+
+                }
+            }
+        }
+    }
+}
 
 // .hero{
 //     height: $full-screen;
