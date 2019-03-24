@@ -141,7 +141,10 @@ body{
 }
 
 
+.container{
 
+    padding: 0 60px;
+}
 
 
 #wrapper{
@@ -158,7 +161,6 @@ body{
             flex-wrap: wrap;
         }
         .column{
-            padding: 60px;
             width: 100%;
             height: $full-screen;
             display: flex;
@@ -186,6 +188,7 @@ body{
             .links{
                 display: flex;
                 width: 100%;
+                justify-content: center;
             }
             .skills{
                 display: flex;
@@ -203,12 +206,11 @@ body{
     footer{
         text-align: center;
         color: white;
-
         .footer-icon{
             transition: all .59s ease-in-out;
             font-size: 3.649em;
+            margin: 1.1em;
             color: #FFFFFF;
-            text-align: center;
             &:hover{
                 color: #0078b4;
             }
@@ -221,13 +223,12 @@ body{
                     height: 60vh;
                 }
                 .links{
-                    a{
-                        margin: 1.1em;
-                        text-align: center;
-                    }
+                    text-align: center;
+                    color: red;
                 }
             }
         }
+
     }
 
 
