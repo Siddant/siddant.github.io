@@ -127,7 +127,7 @@ body{
     border: 1px solid #0078b4;
     height: auto;
     width: 300px;    
-    margin-right: 3px;
+    margin:13px  13px 0 0;
     text-decoration: none;
     text-align: center;
     color: #0078b4;
@@ -170,15 +170,15 @@ body{
             }
             .image{
                 &.profile{
-                    height:auto;
-                    width: 25vw;
+                    height:60vh;
+                    width: auto;
                 }
                 &.centered{
                     margin-left: auto;
                     margin-right: auto;
                  }
                 height:auto;
-                width: 40vw;
+                width: 95%;
             }
             &.content{
                 height: 70vh;
@@ -190,7 +190,6 @@ body{
             .links{
                 display: flex;
                 width: 100%;
-                justify-content: center;
             }
             .skills{
                 display: flex;
@@ -199,7 +198,7 @@ body{
                 .skills-icon{
                     font-size:  4.561em;
                     color: #3c023c;
-                    // padding: 0.6em;
+                    padding: 0 60px 60px 0px;
                 }
             }
         }
@@ -219,7 +218,6 @@ body{
         }
         .columns{
             background-image: linear-gradient( #3D007A, #290060);
-
             .column{
                 &.content{
                     height: 60vh;
@@ -384,6 +382,9 @@ body{
 
 
 @media only screen and (max-width: $mobile) {
+    .container{
+        padding: 0 20px;
+    }
     .navbar{
         height: auto;
         width: 100%;
@@ -415,9 +416,8 @@ body{
     .columns { 
         display: flex;
         flex-wrap: wrap-reverse;
-
+        padding-bottom: 10vh;
         .column{
-            padding: 0;
             height: auto;
             width: 100%;
             &.half{
