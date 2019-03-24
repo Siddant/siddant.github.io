@@ -127,7 +127,7 @@ body{
     border: 1px solid #0078b4;
     height: auto;
     width: 300px;    
-    margin: 3px;
+    margin-right: 3px;
     text-decoration: none;
     text-align: center;
     color: #0078b4;
@@ -165,7 +165,9 @@ body{
             height: $full-screen;
             display: flex;
             flex-direction: column;
-   
+            &.half{
+                width: 50%;
+            }
             .image{
                 &.profile{
                     height:auto;
