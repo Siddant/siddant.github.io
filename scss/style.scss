@@ -29,7 +29,7 @@ body{
 
  .title, p{
      margin-bottom: 2vh;
-     line-height: 32.84px;
+     line-height: 1.824em;
      &.centered{
         text-align:center;
      }
@@ -38,8 +38,6 @@ body{
      }
      &.is-1{
          font-size: 3.193em;
-         line-height: 114.94px;
-
      }
      &.is-2{
         font-size: 2.281em;
@@ -55,9 +53,6 @@ body{
 .section{
     padding-top: 9vh;
     background-color:#FFFFFF;
-    // padding: 3rem;
-    width: 100%;
-    height: auto;
 
 }
 .shadow{
@@ -131,13 +126,14 @@ body{
     border-radius: 4px;
     border: 1px solid #0078b4;
     height: auto;
-    margin: 0.2em;
+    width: 300px;    
+    margin: 3px;
     text-decoration: none;
     text-align: center;
     color: #0078b4;
     font-size: 1.186em;
     transition: color 1s, background-color 1s;
-    padding: 0.3em 1em;
+    padding: 5px;
     &:hover{
         background-color:#0078b4;
         color: white;
@@ -154,7 +150,6 @@ body{
 }
     
     .columns{
-
         display: flex;
         justify-content: center;
 
@@ -163,15 +158,12 @@ body{
             flex-wrap: wrap;
         }
         .column{
+            padding: 60px;
             width: 100%;
             height: $full-screen;
             display: flex;
             flex-direction: column;
-            &.half{
-                width: 45%;
-                // padding: 4vh;
-
-            }
+   
             .image{
                 &.profile{
                     height:auto;
@@ -202,7 +194,7 @@ body{
                 .skills-icon{
                     font-size:  4.561em;
                     color: #3c023c;
-                    padding: 0.6em;
+                    // padding: 0.6em;
                 }
             }
         }
@@ -216,6 +208,7 @@ body{
             transition: all .59s ease-in-out;
             font-size: 3.649em;
             color: #FFFFFF;
+            text-align: center;
             &:hover{
                 color: #0078b4;
             }
@@ -411,7 +404,6 @@ body{
                 .navbar-item{
                     margin-left: 0vh; 
                     width: 100%;
-                    font-size: 24.63px;
                 }
             }
         }
@@ -422,8 +414,9 @@ body{
         flex-wrap: wrap-reverse;
 
         .column{
+            padding: 0;
             height: auto;
-
+            width: 100%;
             &.half{
                 width: 100%;
             }
@@ -431,18 +424,11 @@ body{
                 flex-wrap: wrap;
             }
 
-            .image{
-   
-                height:40vh;
-                width: auto;
-            }
-
             .skills{
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
                 .skills-icon{
-                    font-size: 82.1px;
                     padding: 1.5vh !important;
                 }
             }
@@ -451,17 +437,18 @@ body{
 
     } 
     
-    
-    // .hero{
-    //     .hero-body{
 
-    //         .column{
-    //             &:nth-child(1){
-    //                 padding-top: 20vh !important;            
-    //             }
-    //         }
-    //     }
-    //   }
+    .hero{
+        .hero-body{
+            text-align: center;
+            .column{
+                &:nth-child(1){
+                    padding-top: 10vh;   
+                    color: white;         
+                }
+            }
+        }
+      }
 
       .title, p{
 
