@@ -83,7 +83,7 @@ body{
                 font-size: 1.140em;
                 background-color: #FFFFFF;
                 .navbar-item{
-                    color: #3c023c;
+                    color: #02124F;
                 }
             }
 
@@ -110,7 +110,7 @@ body{
 .hero{
     height: $full-screen;
     width: 100%;
-    background-image: linear-gradient( #290060, #3D007A);
+    background-image: linear-gradient( #0F084B, #02124F);
     .hero-body{
         text-align: center;
         .column{
@@ -197,7 +197,7 @@ body{
                 justify-content: center;
                 .skills-icon{
                     font-size:  4.561em;
-                    color: #3c023c;
+                    color: #02124F;
                     padding: 0 60px 60px 0px;
                 }
             }
@@ -217,7 +217,7 @@ body{
             }
         }
         .columns{
-            background-image: linear-gradient( #3D007A, #290060);
+            background-image: linear-gradient(#02124F, #0F084B);
             .column{
                 &.content{
                     height: 60vh;
