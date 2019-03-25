@@ -400,6 +400,14 @@ body{
             .navbar-start{
                 overflow: hidden;
                 flex-wrap: wrap;
+                &.scroll-activate{
+                    font-size: 1.824em;
+                    background-color: black;
+                    .navbar-item{
+                        color: #FFFFFF;
+                    }
+                }
+            
                 &.mobile{
                     height: 0vh;
                 }
@@ -409,10 +417,18 @@ body{
                 .navbar-item{
                     margin-left: 0vh; 
                     width: 100%;
+                    &.active{
+                        color: red;
+    
+                    }
                 }
             }
         }
     }
+
+
+
+
 
     .columns { 
         display: flex;
