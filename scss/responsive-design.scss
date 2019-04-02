@@ -1,0 +1,98 @@
+@media only screen and (max-width: $mobile) {
+    .container{
+        padding: 0 20px;
+    }
+    .navbar{
+        height: auto;
+        width: 100%;
+        background-color: black;
+        .navbar-menu{
+            height:auto;
+            .hamburger{
+                display: flex;
+                color: purple;
+
+            }      
+            .navbar-start{
+                overflow: hidden;
+                flex-wrap: wrap;
+                &.scroll-activate{
+                    font-size: 1.824em;
+                    background-color: black;
+                    .navbar-item{
+                        color: #FFFFFF;
+                    }
+                }
+            
+                &.mobile{
+                    height: 0vh;
+                }
+                &.height-size{
+                    height: 60vh;
+                }
+                .navbar-item{
+                    margin-left: 0vh; 
+                    width: 100%;
+                    &.active{
+                        color: red;
+    
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+    .columns { 
+        display: flex;
+        flex-wrap: wrap-reverse;
+        padding-bottom: 10vh;
+        .column{
+            height: auto;
+            width: 100%;
+            &.half{
+                width: 100%;
+            }
+            .links{
+                flex-wrap: wrap;
+            }
+
+            .skills{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                .skills-icon{
+                    padding: 1.5vh !important;
+                }
+            }
+
+        }
+
+    } 
+    
+
+    .hero{
+        .hero-body{
+            text-align: center;
+            .column{
+                &:nth-child(1){
+                    padding-top: 10vh;   
+                    color: white;         
+                }
+            }
+        }
+      }
+
+      .title, p{
+
+        &.desktop{
+           display:none;
+        }
+        &.mobile{
+            display: block;
+        }
+    }
+}
