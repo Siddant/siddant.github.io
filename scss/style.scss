@@ -11,9 +11,7 @@ $tablet: 1024px;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'AileronRegular', sans-serif; 
-    font-weight: normal; 
-    font-style: normal; 
-    font-weight: 200;
+
 }
 
 
@@ -22,18 +20,17 @@ $tablet: 1024px;
 
 
 body{
-    display: flex;
-    flex-wrap: wrap;
     background-color: $outter-color;
-    font-size: 18px;
+    font-size: 16px;
     background-color:#FFFFFF;
 
 }
 
 
  .title, p{
+
      margin-bottom: 2vh;
-     line-height: 1.824em;
+     line-height: 2.5em;
      &.centered{
         text-align:center;
      }
@@ -45,6 +42,8 @@ body{
      }
      &.is-2{
         font-size: 2.281em;
+        // line-height: 3em;
+
      }
 
      &.is-3{
@@ -59,17 +58,33 @@ body{
     height: auto;
 }
 
-.container{
 
-    padding: 0 60px;
-}
 
 .section{
-    // padding-top: 9vh;
-    // background-color:#FFFFFF;
-    margin-bottom: 60px;
+    background-color:#FFFFFF;
+
+    // margin-bottom: 60px;
+    margin: 0 50px  0 50px;
+    padding: 50px;
+
+    // -webkit-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+    // -moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+    // box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+    &:first-child{
+        margin:0;
+        background-color:#FFFFFF;
+    }
+    &:last-child {
+        margin: 0;  
+        // margin-bottom: 0;
+
+    }
 
 }
+
+// .space-bottom{
+//     margin-bottom: 100px;
+// }
 
 .shadow{
     -webkit-box-shadow: 1px 9px 14px -6px rgba(0,0,0,0.75);
@@ -91,7 +106,7 @@ body{
 
         .navbar-start{
             display: flex;
-            transition: all .59s ease-in-out;
+            transition: all .45s ease-in-out;
             font-size: 1.824em;
             color: white;
             justify-content:center;
@@ -129,27 +144,20 @@ body{
     background-image: linear-gradient( #0F084B, #02124F);
     clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
-      
-    margin-bottom: 60px; 
+
     .hero-body{
         text-align: center;
-
-        .column{
-            &:nth-child(1){
-                padding-top: 30vh;   
-                color: white;  
-                letter-spacing: .4em;
-
-                .title{
-                    text-shadow: 3px 1px 0px rgba(150, 150, 150, 0.41);      
-                }
-
-                h1{
-                    text-transform: uppercase;
-    
-                }       
+            padding-top: 20vh;   
+            color: white;  
+            letter-spacing: .4em;
+            .title{
+                text-shadow: 3px 1px 0px rgba(150, 150, 150, 0.41);      
             }
-        }
+
+            h1{
+                text-transform: uppercase;
+    
+            }       
     }
   }
 
@@ -178,36 +186,63 @@ body{
     .columns{
         display: flex;
         justify-content: center;
-
         height: auto;
+
+
+
         &.multi-column{
             flex-wrap: wrap;
         }
         .column{
+            margin-right: 50px;
+
             width: 100%;
             height: auto;
             display: flex;
             flex-direction: column;
-            padding: 20px;
             
+            // flex-grow: 1;          
             &.half{
                 width: 50%;
             }
+
+            &.profile{
+                // height: 500px;
+                // height:60vh;
+                // width: auto;
+
+                // background-color:green;
+
+                background-image: url("../media/Siddant-11.jpg");
+                background-repeat: no-repeat;
+                // // background-size: cover; /* Resize the background image to cover the entire container */
+                background-position: center; /* Center the image */
+                background-size: contain;
+
+                    .image{
+
+                        // &.centered{
+                        //     margin-left: auto;
+                        //     margin-right: auto;
+                        //  }
+                        
+                        height:auto;
+                        width: auto;
+                    }
+
+            }
+
             .image{
-                &.profile{
-                    height:60vh;
-                    width: auto;
-                }
-                &.centered{
-                    margin-left: auto;
-                    margin-right: auto;
-                 }
+
+                // &.centered{
+                //     margin-left: auto;
+                //     margin-right: auto;
+                //  }
+                
                 height:auto;
                 width: 95%;
             }
-            &.content{
-                height: 70vh;
-            }
+
             &.arrow{
                 height: 20vh;
 
@@ -216,22 +251,23 @@ body{
             //     display: flex;
             //     width: 100%;
             // }
-            // .skills{
-            //     display: flex;
-            //     flex-wrap: wrap;
-            //     justify-content: center;
-            //     .skills-icon{
-            //         font-size:  4.561em;
-            //         color: #02124F;
-            //         padding: 0 60px 60px 0px;
-            //     }
-            // }
+            .skills{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .skills-icon{
+                    font-size:  4.561em;
+                    color: #02124F;
+                    padding: 0 60px 60px 0px;
+                }
+            }
         }
     }
 
     footer{
         text-align: center;
         color: white;
+        
         .footer-icon{
             transition: all .59s ease-in-out;
             font-size: 3.649em;
