@@ -29,8 +29,8 @@ body{
 
  .title, p{
 
-     margin-bottom: 2vh;
-     line-height: 2.5em;
+     margin-bottom: 10px;
+     line-height: 2.2em;
      &.centered{
         text-align:center;
      }
@@ -42,8 +42,6 @@ body{
      }
      &.is-2{
         font-size: 2.281em;
-        // line-height: 3em;
-
      }
 
      &.is-3{
@@ -64,8 +62,9 @@ body{
     background-color:#FFFFFF;
 
     // margin-bottom: 60px;
-    margin: 0 50px  0 50px;
-    padding: 50px;
+    // margin: 0 50px  0 50px;
+    // padding: 60px;
+    padding:60px 80px 0 80px;
 
     // -webkit-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
     // -moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
@@ -75,16 +74,16 @@ body{
         background-color:#FFFFFF;
     }
     &:last-child {
-        margin: 0;  
-        // margin-bottom: 0;
+        padding:0;
+        margin-bottom: 0;
 
     }
 
 }
 
-// .space-bottom{
-//     margin-bottom: 100px;
-// }
+.space-bottom{
+    margin-bottom: 100px;
+}
 
 .shadow{
     -webkit-box-shadow: 1px 9px 14px -6px rgba(0,0,0,0.75);
@@ -188,13 +187,11 @@ body{
         justify-content: center;
         height: auto;
 
-
-
         &.multi-column{
             flex-wrap: wrap;
         }
         .column{
-            margin-right: 50px;
+            // margin-right: 50px;
 
             width: 100%;
             height: auto;
@@ -204,53 +201,47 @@ body{
             // flex-grow: 1;          
             &.half{
                 width: 50%;
+                &:first-child{
+                    margin-right: 30px;
+                }
+                &:last-child {
+                    margin-left: 30px;
+
+            
+                }
             }
 
             &.profile{
-                // height: 500px;
-                // height:60vh;
-                // width: auto;
-
-                // background-color:green;
-
                 background-image: url("../media/Siddant-11.jpg");
                 background-repeat: no-repeat;
-                // // background-size: cover; /* Resize the background image to cover the entire container */
-                background-position: center; /* Center the image */
-                background-size: contain;
-
-                    .image{
-
-                        // &.centered{
-                        //     margin-left: auto;
-                        //     margin-right: auto;
-                        //  }
-                        
-                        height:auto;
-                        width: auto;
-                    }
+                background-size: 45vh, auto, contain;
+                background-position: center top; 
 
             }
 
             .image{
-
-                // &.centered{
-                //     margin-left: auto;
-                //     margin-right: auto;
-                //  }
-                
                 height:auto;
                 width: 95%;
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                border-radius: 6px;
+
+
+                -webkit-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+                box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+
+
             }
 
             &.arrow{
                 height: 20vh;
 
             }
-            // .links{
-            //     display: flex;
-            //     width: 100%;
-            // }
+            .links{
+                display: flex;
+                width: 100%;
+            }
             .skills{
                 display: flex;
                 flex-wrap: wrap;
@@ -267,7 +258,15 @@ body{
     footer{
         text-align: center;
         color: white;
-        
+        background-image: linear-gradient(#02124F, #0F084B);
+        height: 80vh;
+        -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+        .container{
+            padding-top: 20vh;   
+
+        }
+
         .footer-icon{
             transition: all .59s ease-in-out;
             font-size: 3.649em;
@@ -277,19 +276,19 @@ body{
                 font-size: 4.2em;
             }
         }
-        .columns{
-            background-image: linear-gradient(#02124F, #0F084B);
-            .column{
-                &.content{
-                    height: 60vh;
-                }
-                .links{
-                    text-align: center;
-                    justify-content: center;
-                    color: red;
-                }
-            }
-        }
+        // .columns{
+        //     background-image: linear-gradient(#02124F, #0F084B);
+        //     .column{
+        //         &.content{
+        //             height: 60vh;
+        //         }
+        //         .links{
+        //             text-align: center;
+        //             justify-content: center;
+        //             color: red;
+        //         }
+        //     }
+        // }
 
     }
 @import "./responsive-design";
