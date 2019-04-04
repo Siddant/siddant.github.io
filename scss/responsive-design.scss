@@ -39,7 +39,7 @@
                 margin-bottom:70px !important;
             }
             &.profile{
-                height: 50vh;
+                height: 400px;
             }
 
             }
@@ -58,6 +58,8 @@
 
 
     footer{
+        // height: auto;   
+
         .container{
             padding-top: 20vh  !important;   
 
@@ -74,6 +76,7 @@
     
     }
 }
+
 
 
 @media only screen and (max-width: $mobile) {
@@ -147,7 +150,12 @@
         }
 
     } 
+
+
     footer{
+
+        height: auto;   
+
         .container{
            height: auto;   
 
