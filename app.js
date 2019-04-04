@@ -65,7 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', handleScrollEvent);
 
     AOS.init({
-        once: true
     });
 
 })
