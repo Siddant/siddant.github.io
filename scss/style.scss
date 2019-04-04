@@ -61,14 +61,7 @@ body{
 .section{
     background-color:#FFFFFF;
 
-    // margin-bottom: 60px;
-    // margin: 0 50px  0 50px;
-    // padding: 60px;
-    padding:60px 80px 0 80px;
-
-    // -webkit-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
-    // -moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
-    // box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+    padding:60px 100px 60px 100px;
     &:first-child{
         margin:0;
         background-color:#FFFFFF;
@@ -152,10 +145,8 @@ body{
             .title{
                 text-shadow: 3px 1px 0px rgba(150, 150, 150, 0.41);      
             }
-
             h1{
                 text-transform: uppercase;
-    
             }       
     }
   }
@@ -221,17 +212,13 @@ body{
 
             .image{
                 height:auto;
-                width: 95%;
+                width: 100%;
                 -webkit-border-radius: 6px;
                 -moz-border-radius: 6px;
                 border-radius: 6px;
-
-
                 -webkit-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
                 -moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
                 box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
-
-
             }
 
             &.arrow{
@@ -242,18 +229,53 @@ body{
                 display: flex;
                 width: 100%;
             }
-            .skills{
+
+        }
+    }
+
+    .skills-container{
+        // background-color: red;
+        ul{
+            display: flex;
+            list-style-type: none;
+            flex-wrap: wrap;
+            text-align: center;
+            align-items: baseline;
+            justify-content: center;
+            li{
                 display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
+                flex-direction: column;
+                height:auto;
+                width: auto;
+                // height: 150px;
+                // width: 150px;
+                padding: 23px;
+
                 .skills-icon{
-                    font-size:  4.561em;
+                    font-size: 60px;
+                    margin-bottom: 10px;
                     color: #02124F;
-                    padding: 0 60px 60px 0px;
+                }
+                .image{
+                    height: 60px;
+                    width: 60px;
+                    background-color: red;
+                    margin-bottom: 10px;
+                    margin-right: auto;
+                    margin-left: auto; 
+
                 }
             }
         }
     }
+
+
+    // .skills-icon{
+    //     font-size:  4.561em;
+    //     color: #02124F;
+    //     padding: 0 60px 60px 0px;
+    // }
+
 
     footer{
         text-align: center;
@@ -262,33 +284,29 @@ body{
         height: 80vh;
         -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
         clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+
         .container{
             padding-top: 20vh;   
 
         }
 
-        .footer-icon{
-            transition: all .59s ease-in-out;
-            font-size: 3.649em;
-            margin: 0.3em;
-            color: #FFFFFF;
-            &:hover{
-                font-size: 4.2em;
-            }
-        }
-        // .columns{
-        //     background-image: linear-gradient(#02124F, #0F084B);
-        //     .column{
-        //         &.content{
-        //             height: 60vh;
-        //         }
-        //         .links{
-        //             text-align: center;
-        //             justify-content: center;
-        //             color: red;
-        //         }
-        //     }
-        // }
+
+                .footer-icon{
+                    margin: 0.3em;
+                    color: #FFFFFF;
+                    transition: all .30s ease-in-out;
+                    font-size: 3em;
+                    border: 2px solid rgba(255,255,255,0.3);
+                    border-radius: 100%;
+                    margin-right: 10px;
+                    padding: 20px;
+                    &:hover{
+                        background-color: #FFFFFF;
+                        
+                            color: #02124F;
+                        
+                    }
+                }
 
     }
 @import "./responsive-design";
