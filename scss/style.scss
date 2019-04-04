@@ -176,14 +176,12 @@ body{
         }
   
         .column{
-            // margin-right: 50px;
 
             width: 100%;
             height: auto;
             display: flex;
             flex-direction: column;
             
-            // flex-grow: 1;          
             &.half{
                 width: 50%;
             }
