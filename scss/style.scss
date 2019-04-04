@@ -56,8 +56,6 @@ body{
     height: auto;
 }
 
-
-
 .section{
     background-color:#FFFFFF;
 
@@ -167,12 +165,7 @@ body{
         background-color:#0078b4;
         color: white;
     }
-}
-
-
-
-
-    
+}    
     .columns{
         display: flex;
         justify-content: center;
@@ -181,6 +174,7 @@ body{
         &.multi-column{
             flex-wrap: wrap;
         }
+  
         .column{
             // margin-right: 50px;
 
@@ -192,14 +186,6 @@ body{
             // flex-grow: 1;          
             &.half{
                 width: 50%;
-                &:first-child{
-                    margin-right: 30px;
-                }
-                &:last-child {
-                    margin-left: 30px;
-
-            
-                }
             }
 
             &.profile{
@@ -220,7 +206,6 @@ body{
                 -moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
                 box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
             }
-
             &.arrow{
                 height: 20vh;
 
@@ -233,6 +218,39 @@ body{
         }
     }
 
+
+    #Pepino, #space-invaders{
+        .columns{
+            flex-direction: row-reverse;
+            .column{
+            &.half{
+                &:first-child{
+                    margin-left: 30px;
+                }
+                &:last-child {
+                    margin-right: 30px;            
+                }
+                }
+            }
+        }
+    }
+
+    #Read-me, #React-film{
+        .columns{
+            .column{
+            &.half{
+                &:first-child{
+                    margin-right: 30px;
+                }
+                &:last-child {
+                    margin-left: 30px;
+            
+                }
+                }
+            }
+        }
+    }
+    
     .skills-container{
         // background-color: red;
         ul{
