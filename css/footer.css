@@ -1,0 +1,25 @@
+footer {
+  text-align: center;
+  background-color: var(--footer-color);
+  position: relative;
+}
+
+footer .container {
+  padding-top: 20vh;
+}
+
+footer .footer-icon {
+  margin: 3rem;
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+  font-size: 4rem;
+  border: 0.2rem solid rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  margin-right: 1rem;
+  padding: 2rem;
+}
+
+footer .footer-icon:hover {
+  background-color: var(--white);
+  color: var(--secondar-color);
+}

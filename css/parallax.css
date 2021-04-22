@@ -1,0 +1,87 @@
+#hero {
+  min-height: 100vh;
+  padding: 0;
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+#buildings {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#buildings .image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-image: url(/media/buildings.png);
+  background-size: cover;
+  background-position: top center;
+  top: 25.5%;
+  background-repeat: no-repeat;
+}
+
+#sky {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  z-index: -3;
+}
+
+#sky .image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  background-image: url(/media/sky.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+#hero #name h1 {
+  font-size: 12rem;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, var(--white) 35%, #75a6c3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#hero #name {
+  position: absolute;
+  top: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100%;
+  z-index: -1;
+}
+
+#job-title {
+  position: absolute;
+  top: 55%;
+  text-align: center;
+  width: 100%;
+}
+
+#job-title h2 {
+  font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+  #hero #name {
+    top: 20%;
+  }
+
+  #hero #name h1 {
+    font-size: 7rem;
+  }
+  #job-title h2 {
+    font-size: 3rem;
+  }
+}

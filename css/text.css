@@ -1,0 +1,39 @@
+p {
+  font-size: var(--text-size);
+}
+
+.title {
+  margin-bottom: 1.5rem;
+}
+
+.column p {
+  margin-bottom: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.title .centered .is-2 {
+  text-align: center;
+}
+
+.title.centered,
+p.centered {
+  text-align: center;
+}
+.title.mobile,
+p.mobile {
+  display: none;
+}
+
+.title.is-1,
+p.is-1 {
+  font-size: 3.193rem;
+}
+.title.is-2,
+p.is-2 {
+  font-size: 5rem;
+}
+
+.title.is-3,
+p.is-3 {
+  font-size: 4rem;
+}

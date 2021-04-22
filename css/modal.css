@@ -1,0 +1,91 @@
+.closebt {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  z-index: 99;
+}
+
+#projects-modals h3,
+#projects-modals p {
+  color: var(--black);
+}
+
+#projects-modals h3 {
+  padding: 1rem;
+}
+.projects-modals-container {
+  padding: 8rem;
+}
+
+#projects-modals .columns {
+  display: flex;
+}
+
+#projects-modals .columns .column {
+  width: 50%;
+  padding: 1rem;
+}
+
+#projects-modals .columns .column img {
+  height: auto;
+  width: 100%;
+}
+
+.project-link {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-size: 1.8rem;
+}
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.button {
+  border-radius: 0.4rem;
+  border: 0.1rem solid var(--button-color);
+  width: 25rem;
+  text-decoration: none;
+  text-align: center;
+  color: var(--button-color);
+  font-size: 1rem;
+  transition: color 1s, background-color 1s;
+  padding: 1rem;
+  margin-right: 1.2rem;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  display: inline-block;
+}
+.button i {
+  font-size: 1.6rem;
+  margin-right: 1rem;
+}
+
+.button:hover {
+  background-color: var(--button-color);
+  color: var(--white);
+}
+
+@media (max-width: 1024px) {
+  #projects-modals .columns {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #projects-modals .columns .column {
+    width: 100%;
+  }
+
+  #projects-modals .columns .column img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .projects-modals-container {
+    padding: 3rem;
+  }
+  #projects-modals h3 {
+    padding-top: 7rem;
+  }
+}

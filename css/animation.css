@@ -1,0 +1,62 @@
+/* animation */
+.bounce-down {
+  -moz-animation: bouncedown 3s infinite;
+  -webkit-animation: bouncedown 3s infinite;
+  animation: bouncedown 3s infinite;
+}
+
+.bounce-up {
+  -moz-animation: bounceup 3s infinite;
+  -webkit-animation: bounceup 3s infinite;
+  animation: bounceup 3s infinite;
+}
+
+@keyframes bouncedown {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-3rem);
+    -ms-transform: translateY(-3rem);
+    -webkit-transform: translateY(-3rem);
+    transform: translateY(-3rem);
+  }
+  60% {
+    -moz-transform: translateY(-1.5rem);
+    -ms-transform: translateY(-1.5rem);
+    -webkit-transform: translateY(-1.5rem);
+    transform: translateY(-1.5rem);
+  }
+}
+
+@keyframes bounceup {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(3rem);
+    -ms-transform: translateY(3rem);
+    -webkit-transform: translateY(3rem);
+    transform: translateY(3rem);
+  }
+  60% {
+    -moz-transform: translateY(1.5rem);
+    -ms-transform: translateY(1.5rem);
+    -webkit-transform: translateY(1.5rem);
+    transform: translateY(1.5rem);
+  }
+}

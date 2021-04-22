@@ -5,89 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Siddant Gurung | Web Developer</title>
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
     <link
       rel="stylesheet"
       media="screen"
       href="https://fontlibrary.org/face/aileron"
       type="text/css"
     />
-
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-
     <link
       rel="stylesheet"
       href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
     />
-
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="icon" href="media/title_logo.png" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css"
+    />
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./js/animatedModal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 
-    <script src="app.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
 
   <body>
     <div id="wrapper">
-      <header class="header">
-        <nav class="navbar">
-          <div id="navMenu" class="navbar-menu">
-            <button class="hamburger hamburger--collapse" type="button">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-            </button>
-            <div class="navbar-start desktop mobile">
-              <a href="#home" class="navbar-item active">Home</a>
-              <a href="#about" class="navbar-item">About</a>
-              <a href="#skills" class="navbar-item">Skills</a>
-              <a href="#projects" class="navbar-item">Projects</a>
-              <a href="#contact" class="navbar-item">Contact</a>
-            </div>
-          </div>
+      <header class="header section" id="home">
+        <nav class="navigation">
+          <a href="#home" class="navigation-item active">Home</a>
+          <a href="#about" class="navigation-item">About</a>
+          <a href="#skills" class="navigation-item">Skills</a>
+          <a href="#projects" class="navigation-item">Projects</a>
+          <a href="#contact" class="navigation-item">Contact</a>
         </nav>
 
-        <section id="home" class="section hero parallax">
-          <div class="hero-body">
-            <div class="container">
-              <div>
-                <h1 class="title centered is-1">Siddant Gurung</h1>
-                <h2 class="title centered is-2">Web Developer</h2>
-              </div>
+        <div class="navigation-mobile">
+          <button class="navigation-mobile-burger" aria-label="toggle menu">
+            <span aria-hidden="true"></span>
+          </button>
 
-              <div class="arrow">
-                <a href="#about"
-                  ><i class="fas fa-angle-down arrow-down bounce-down"> </i
-                ></a>
-              </div>
+          <div class="navigation-mobile-background">&nbsp;</div>
+          <nav class="navigation-mobile-nav">
+            <ul class="navigation-mobile-list">
+              <li class="navigation-mobile-item">
+                <a href="#" class="navigation-mobile-link">Home</a>
+              </li>
+              <li class="navigation-mobile-item">
+                <a href="#about-me" class="navigation-mobile-link">About</a>
+              </li>
+              <li class="navigation-mobile-item">
+                <a href="#skills" class="navigation-mobile-link">Skills</a>
+              </li>
+              <li class="navigation-mobile-item">
+                <a href="#projects" class="navigation-mobile-link">Projects</a>
+              </li>
+              <li class="navigation-mobile-item">
+                <a href="#contact" class="navigation-mobile-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <section class="hero parallax">
+          <div id="hero">
+            <div id="sky" class="rellax" data-rellax-speed="-5">
+              <div class="image"></div>
             </div>
+
+            <div id="buildings" class="rellax" data-rellax-speed="-3">
+              <div class="image"></div>
+            </div>
+
+            <div id="name" class="rellax" data-rellax-speed="-4.5">
+              <h1>Siddant Gurung</h1>
+            </div>
+
+            <div id="job-title" class="rellax" data-rellax-speed="-3">
+              <h2>Web Developer</h2>
+            </div>
+            <a class="arrow" href="#about" id="header-arrow"
+              ><i class="fas fa-angle-down arrow-down bounce-down"> </i
+            ></a>
           </div>
         </section>
       </header>
-
       <section id="about" class="section">
         <div class="container">
-          <h2
-            class="title centered is-2"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-          >
-            About Me
-          </h2>
-
+          <h2 class="title centered is-2" id="about-me">About Me</h2>
           <div class="columns">
-            <div
-              class="column half"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
+            <div class="column">
               <p>
                 I am an ambitious and hardworking individual, with a strong
                 willingness to learn. I was introduced to coding during my time
@@ -107,29 +124,15 @@
               </p>
             </div>
 
-            <div
-              class="column half profile"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            ></div>
+            <div class="column" id="profile"></div>
           </div>
         </div>
       </section>
 
       <section id="skills" class="section">
         <div class="container">
-          <h2
-            class="title centered is-2"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-          >
-            Skills
-          </h2>
-          <div
-            class="skills-container"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-          >
+          <h2 class="title centered is-2">Skills</h2>
+          <div class="skills-container">
             <ul>
               <li>
                 <i class="devicon-html5-plain skills-icon"></i>
@@ -142,6 +145,10 @@
               <li>
                 <i class="devicon-javascript-plain skills-icon"></i>
                 JavaScript
+              </li>
+              <li>
+                <i class="devicon-typescript-plain skills-icon"></i>
+                TypeScript
               </li>
               <li>
                 <i class="devicon-jquery-plain skills-icon"></i>
@@ -183,10 +190,10 @@
                 <i class="devicon-postgresql-plain skills-icon"></i>
                 PostgreSQL
               </li>
-              <li>
+              <!-- <li>
                 <i class="devicon-java-plain skills-icon"></i>
                 Java
-              </li>
+              </li> -->
               <li>
                 <i class="devicon-git-plain skills-icon"></i>
                 Git
@@ -229,13 +236,10 @@
                 Visual Studio Code
               </li>
 
-              <li>
-                <!-- <svg class="  image">
-                <use href="./media/Flask.svg"></use>
-              </svg> -->
+              <!-- <li>
                 <img class="image" src="./media/Flask.svg" />
                 Flask
-              </li>
+              </li> -->
 
               <li>
                 <img class="image" src="./media/insomnia.svg" />
@@ -260,231 +264,264 @@
                 <img class="image" src="./media/yarn.svg" />
                 yarn
               </li>
+              <li>
+                <img class="image" src="./media/redux.svg" />
+                Redux
+              </li>
+              <li>
+                <img class="image" src="./media/redux-saga.svg" />
+                Redux-Saga
+              </li>
+              <li>
+                <img class="image" src="./media/jest.svg" />
+                Jest
+              </li>
+              <li>
+                <img class="image" src="./media/jira.svg" />
+                Jira
+              </li>
             </ul>
           </div>
         </div>
       </section>
 
       <section id="projects" class="section">
-        <div class="container">
-          <h2
-            class="title centered is-2"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-          >
-            Projects
-          </h2>
+        <div id="projects-container">
+          <h2 class="title centered is-2">Projects</h2>
+          <div class="projects-card">
+            <div class="card">
+              <figure class="c4-izmir c4-image-blur">
+                <img src="./media/project-04.png" alt="Sample Image" />
+                <figcaption class="c4-layout-center-center">
+                  <div class="c4-reveal-up">
+                    <h3 class="title is-3">Read-me</h3>
+                  </div>
+                  <div class="c4-reveal-up">
+                    <a class="project-link" id="demo01" href="#read-me-modal"
+                      >click here to learn more</a
+                    >
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
 
-          <div id="Read-me" class="space-bottom">
-            <div class="columns">
-              <div
-                class="column half"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                <h3 class="title desktop is-3">Read-me (group project):</h3>
-                <p>(26th February 2019 - 6th March 2019)</p>
-                <p>
-                  A group project working in a team of three, the duration of
-                  the project was seven days. The concept of the project was to
-                  use Python, React and PostgreSQL to develop a web application.
-                  Read-me is a short story sharing website that allows users to
-                  share their own stories. The features I implemented in this
-                  project was text to speech, messaging system and following
-                  other users.
-                </p>
+            <div class="card">
+              <figure class="c4-izmir c4-image-blur">
+                <img src="./media/project-03.png" alt="Sample Image" />
+                <figcaption class="c4-layout-center-center">
+                  <div class="c4-reveal-up">
+                    <h3 class="title is-3">Pepino</h3>
+                  </div>
+                  <div class="c4-reveal-up">
+                    <a class="project-link" id="demo02" href="#pepino-modal"
+                      >click here to learn more</a
+                    >
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
 
-                <p>
-                  The technology used: HTML, CSS3, JavaScript, Python,
-                  PostgreSQL, Flask, Marshmallow, SQLAlchemy, Semantic UI,
-                  Heroku
-                </p>
-                <div class="links">
-                  <a
-                    class="button"
-                    href="https://read-meee.herokuapp.com/"
-                    target="_blank"
-                    ><i class="fas fa-external-link-alt"></i> Open this project
-                  </a>
+            <div class="card">
+              <figure class="c4-izmir c4-image-blur">
+                <img src="./media/project-02.png" alt="Sample Image" />
+                <figcaption class="c4-layout-center-center">
+                  <div class="c4-reveal-up">
+                    <h3 class="title is-3">React film web application</h3>
+                  </div>
+                  <div class="c4-reveal-up">
+                    <a class="project-link" id="demo03" href="#film-app-modal"
+                      >click here to learn more</a
+                    >
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
 
-                  <a
-                    class="button"
-                    href="https://github.com/Siddant/project-4"
-                    target="_blank"
-                    ><i class="fab fa-github"></i> See the source code
-                  </a>
-                </div>
-              </div>
-
-              <div
-                class="column half"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                <h3 class="title mobile is-3">Read-me (group project):</h3>
-
-                <img class="image centered" src="./media/project-04.png" />
-              </div>
+            <div class="card">
+              <figure class="c4-izmir c4-image-blur">
+                <img src="./media/project-01.png" alt="Sample Image" />
+                <figcaption class="c4-layout-center-center">
+                  <div class="c4-reveal-up">
+                    <h3 class="title is-3">Space invaders</h3>
+                  </div>
+                  <div class="c4-reveal-up">
+                    <a
+                      class="project-link"
+                      id="demo04"
+                      href="#space-invaders-modal"
+                      >click here to learn more</a
+                    >
+                  </div>
+                </figcaption>
+              </figure>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div id="Pepino" class="space-bottom">
-            <div class="columns">
-              <div
-                class="column half"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                <h3 class="title desktop is-3">Pepino (group project):</h3>
-                <p>(8th February 2019 - 15th February 2019)</p>
-                <p>
-                  A group project working in a team of three, the duration of
-                  the project was seven days. The concept of the project was to
-                  use the MERN stack to develop a web application, that allows
-                  users to share packages they have used. The aim of the project
-                  was to build a platform for developers to connect with other
-                  developers. The feature I implemented in this project was the
-                  authorization system.
-                </p>
-
-                <p>
-                  The technology used: HTML, CSS3, JavaScript, React, MongoDB,
-                  Express, Node.js, Heroku
-                </p>
-                <div class="links">
-                  <a
-                    class="button"
-                    href="https://project-3-group.herokuapp.com/"
-                    target="_blank"
-                    ><i class="fas fa-external-link-alt"></i> Open this project
-                  </a>
-
-                  <a
-                    class="button"
-                    href="https://github.com/Siddant/project-03"
-                    target="_blank"
-                    ><i class="fab fa-github"></i> See the source code
-                  </a>
-                </div>
-              </div>
-
-              <div
-                class="column half"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                <h3 class="title mobile is-3">Pepino (group project):</h3>
-
-                <img class="image centered" src="./media/project-03.png" />
-              </div>
-            </div>
+      <section id="projects-modals">
+        <div id="read-me-modal" class="animated projects-modals-container">
+          <div id="closebt-container" class="close-read-me-modal">
+            <img class="closebt" src="./media/closebt.svg" />
           </div>
 
-          <div id="React-film" class="space-bottom">
-            <div class="columns">
-              <div
-                class="column half"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                <h3 class="title desktop is-3">
-                  React film web application (group project):
-                </h3>
-                <p>(23rd January 2019 - 25th January 2019)</p>
-                <p>
-                  A group project working in with another General Assembly
-                  student to create a React web application, across two days.
-                  The concept of the project was to get familiarise working with
-                  API. The project interacted with the OMDB API to fetch data
-                  about movies and display it on the web. This project was
-                  paired coded, so the coding was divided equally. The feature I
-                  implemented was using the Mapbox API to display cinemas around
-                  your location, after fetching the data from the Movieglue API.
-                </p>
+          <h3 class="title is-3">Read-me (group project):</h3>
 
-                <p>
-                  The technology used: HTML, CSS3, JavaScript, React, Heroku
-                </p>
-                <div class="links">
-                  <a
-                    class="button"
-                    href="https://react-film-database.herokuapp.com/"
-                    target="_blank"
-                    ><i class="fas fa-external-link-alt"></i> Open this project
-                  </a>
+          <div class="columns">
+            <div class="column half">
+              <img class="image" src="./media/project-04.png" />
+            </div>
 
-                  <a
-                    class="button"
-                    href="https://github.com/Siddant/project-02"
-                    target="_blank"
-                    ><i class="fab fa-github"></i> See the source code
-                  </a>
-                </div>
-              </div>
-
-              <div
-                class="column half"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                <h3 class="title mobile is-3">
-                  React film web application (group project):
-                </h3>
-                <img class="image centered" src="./media/project-02.png" />
-              </div>
+            <div class="column half">
+              <p>(26th February 2019 - 6th March 2019)</p>
+              <p>
+                A group project working in a team of three, the duration of the
+                project was seven days. The concept of the project was to use
+                Python, React and PostgreSQL to develop a web application.
+                Read-me is a short story sharing website that allows users to
+                share their own stories. The features I implemented in this
+                project was text to speech, messaging system and following other
+                users.
+              </p>
+              <p>
+                The technology used: HTML, CSS3, JavaScript, Python, PostgreSQL,
+                Flask, Marshmallow, SQLAlchemy, Semantic UI, Heroku
+              </p>
+              <a
+                class="button"
+                href="https://read-meee.herokuapp.com/"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i> Open this project
+              </a>
+              <a
+                class="button"
+                href="https://github.com/Siddant/project-4"
+                target="_blank"
+                ><i class="fab fa-github"></i> See the source code
+              </a>
             </div>
           </div>
+        </div>
 
-          <div id="space-invaders" class="space-bottom">
-            <div class="columns">
-              <div
-                class="column half"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                <h3 class="title desktop is-3">
-                  Space invaders (solo project):
-                </h3>
-                <p>(4th January 2019 - 11th January 2019)</p>
-                <p>
-                  A solo JavaScript Game, the duration of the project was seven
-                  days. The project was managed using a Trello and it was
-                  created using the prototyping approach. Throughout the
-                  project, user testing was implemented to find and fix bugs. In
-                  the game players are allowed to move, shoot and destroy the
-                  enemy ship. Players Scores are displayed and the difficulty of
-                  the game will increase by the level.
-                </p>
+        <div id="pepino-modal" class="animated projects-modals-container">
+          <div id="closebt-container" class="close-pepino-modal">
+            <img class="closebt" src="./media/closebt.svg" />
+          </div>
+          <h3 class="title is-3">Pepino (group project):</h3>
+          <div class="columns">
+            <div class="column half">
+              <img class="image" src="./media/project-03.png" />
+            </div>
+            <div class="column half">
+              <p>(8th February 2019 - 15th February 2019)</p>
+              <p>
+                A group project working in a team of three, the duration of the
+                project was seven days. The concept of the project was to use
+                the MERN stack to develop a web application, that allows users
+                to share packages they have used. The aim of the project was to
+                build a platform for developers to connect with other
+                developers. The feature I implemented in this project was the
+                authorization system.
+              </p>
+              <p>
+                The technology used: HTML, CSS3, JavaScript, React, MongoDB,
+                Express, Node.js, Heroku
+              </p>
+              <a
+                class="button"
+                href="https://project-3-group.herokuapp.com/"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i> Open this project
+              </a>
+              <a
+                class="button"
+                href="https://github.com/Siddant/project-03"
+                target="_blank"
+                ><i class="fab fa-github"></i> See the source code
+              </a>
+            </div>
+          </div>
+        </div>
 
-                <p>The technology used: HTML, CSS3, JavaScript</p>
+        <div id="film-app-modal" class="animated projects-modals-container">
+          <div id="closebt-container" class="close-film-app-modal">
+            <img class="closebt" src="./media/closebt.svg" />
+          </div>
+          <h3 class="title is-3">
+            React film web application (group project):
+          </h3>
+          <div class="columns">
+            <div class="column half">
+              <img class="image" src="./media/project-02.png" />
+            </div>
+            <div class="column half">
+              <p>(23rd January 2019 - 25th January 2019)</p>
+              <p>
+                A group project working in with another General Assembly student
+                to create a React web application, across two days. The concept
+                of the project was to get familiarise working with API. The
+                project interacted with the OMDB API to fetch data about movies
+                and display it on the web. This project was paired coded, so the
+                coding was divided equally. The feature I implemented was using
+                the Mapbox API to display cinemas around your location, after
+                fetching the data from the Movieglue API.
+              </p>
 
-                <div class="links">
-                  <a
-                    class="button"
-                    href="https://siddant.github.io/project-01/"
-                    target="_blank"
-                    ><i class="fas fa-external-link-alt"></i> Open this project
-                  </a>
-                  <a
-                    class="button"
-                    href="https://github.com/Siddant/project-01"
-                    target="_blank"
-                    ><i class="fab fa-github"></i> See the source code
-                  </a>
-                </div>
-              </div>
+              <p>The technology used: HTML, CSS3, JavaScript, React, Heroku</p>
+              <a
+                class="button"
+                href="https://react-film-database.herokuapp.com/"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i> Open this project
+              </a>
 
-              <div
-                class="column half"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                <h3 class="title mobile is-3">
-                  Space invaders (solo project):
-                </h3>
+              <a
+                class="button"
+                href="https://github.com/Siddant/project-02"
+                target="_blank"
+                ><i class="fab fa-github"></i> See the source code
+              </a>
+            </div>
+          </div>
+        </div>
 
-                <img class="image centered" src="./media/project-01.png" />
-              </div>
+        <div
+          id="space-invaders-modal"
+          class="animated projects-modals-container"
+        >
+          <div id="closebt-container" class="close-space-invaders-modal">
+            <img class="closebt" src="./media/closebt.svg" />
+          </div>
+          <h3 class="title is-3">Space invaders (solo project):</h3>
+          <div class="columns">
+            <div class="column half">
+              <img class="image" src="./media/project-01.png" />
+            </div>
+            <div class="column half">
+              <p>(4th January 2019 - 11th January 2019)</p>
+              <p>
+                A solo JavaScript Game, the duration of the project was seven
+                days. The project was managed using a Trello and it was created
+                using the prototyping approach. Throughout the project, user
+                testing was implemented to find and fix bugs. In the game
+                players are allowed to move, shoot and destroy the enemy ship.
+                Players Scores are displayed and the difficulty of the game will
+                increase by the level.
+              </p>
+
+              <p>The technology used: HTML, CSS3, JavaScript</p>
+              <a
+                class="button"
+                href="https://siddant.github.io/project-01/"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i> Open this project
+              </a>
+              <a
+                class="button"
+                href="https://github.com/Siddant/project-01"
+                target="_blank"
+                ><i class="fab fa-github"></i> See the source code
+              </a>
             </div>
           </div>
         </div>
@@ -492,9 +529,9 @@
 
       <footer id="contact" class="footer section">
         <div class="container">
-          <div class="column arrow">
-            <a href="#"><i class="fas fa-angle-up arrow-up bounce-up"></i></a>
-          </div>
+          <a href="#" class="arrow" id="footer-arrow"
+            ><i class="fas fa-angle-up arrow-up bounce-up"></i
+          ></a>
 
           <h2 class="title is-2">Let's connect</h2>
           <div class="links">

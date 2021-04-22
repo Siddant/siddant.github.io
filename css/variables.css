@@ -1,0 +1,22 @@
+:root {
+  --full-screen: 100vh;
+  --primary-color: black;
+  --secondar-color: #031425;
+  --navigation-scroll-activate-text-color: #888;
+  --text-color: #9a9a9a;
+  --white: #ffffff;
+  --outter-color: #f7f7f7;
+  --text-size: 1.6rem;
+  --black: #000;
+  --button-color: #0078b4;
+  --footer-color: #181818;
+  --navigation-mobile-back-ground: #293335;
+}
+
+.c4-izmir {
+  --primary-color: var(--secondar-color);
+  --secondary-color: var(--navigation-scroll-activate-text-color);
+  --transition-duration: 500ms;
+  --border-width: 6px;
+  --overlay-opacity: 0.5;
+}
