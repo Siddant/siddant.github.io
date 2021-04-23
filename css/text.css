@@ -37,3 +37,8 @@ p.is-2 {
 p.is-3 {
   font-size: 4rem;
 }
+
+.title.is-4,
+p.is-3 {
+  font-size: 2rem;
+}
