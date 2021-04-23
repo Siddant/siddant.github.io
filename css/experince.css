@@ -1,5 +1,6 @@
 #experince {
   background-color: var(--secondar-color);
+  overflow: hidden;
 }
 
 .timeline ul {
