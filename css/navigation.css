@@ -135,7 +135,7 @@
   height: 100vh;
   position: fixed;
   top: 0;
-  left: -20%;
+  left: -50%;
   z-index: 1001;
   opacity: 0;
   width: 0;
@@ -145,7 +145,7 @@
 .navigation-mobile-list {
   position: absolute;
   top: 50%;
-  left: 72%;
+  left: 100%;
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
